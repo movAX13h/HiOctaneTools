@@ -1,0 +1,2183 @@
+[00:15:57.704] [ ] using GL 4.5.0 NVIDIA 376.53
+[00:15:57.708] [ ] loading shader 'display' and 'display'
+[00:15:57.711] [ ] compiled vertex shader 'display + display'
+[00:15:57.711] [ ] compiled fragment shader 'display + display'
+[00:15:57.712] [i] uploaded shader program 'display + display'
+[00:15:57.717] [ ] loading shader 'gui/default' and 'gui/panel'
+[00:15:57.717] [ ] compiled vertex shader 'gui/default + gui/panel'
+[00:15:57.717] [ ] compiled fragment shader 'gui/default + gui/panel'
+[00:15:57.717] [i] uploaded shader program 'gui/default + gui/panel'
+[00:15:57.721] [ ] loading shader 'default' and 'default'
+[00:15:57.722] [ ] compiled vertex shader 'default + default'
+[00:15:57.722] [ ] compiled fragment shader 'default + default'
+[00:15:57.722] [i] uploaded shader program 'default + default'
+[00:15:57.729] [ ] loading shader 'gui/default' and 'gui/imagebutton'
+[00:15:57.729] [ ] compiled vertex shader 'gui/default + gui/imagebutton'
+[00:15:57.729] [ ] compiled fragment shader 'gui/default + gui/imagebutton'
+[00:15:57.729] [i] uploaded shader program 'gui/default + gui/imagebutton'
+[00:15:57.732] [ ] uploaded texture 'gui/images/bullfrog.png'
+[00:15:57.733] [ ] loading shader 'gui/default' and 'gui/button'
+[00:15:57.733] [ ] compiled vertex shader 'gui/default + gui/button'
+[00:15:57.734] [ ] compiled fragment shader 'gui/default + gui/button'
+[00:15:57.734] [i] uploaded shader program 'gui/default + gui/button'
+[00:15:57.734] [ ] loading shader 'gui/default' and 'gui/texture'
+[00:15:57.734] [ ] compiled vertex shader 'gui/default + gui/texture'
+[00:15:57.734] [ ] compiled fragment shader 'gui/default + gui/texture'
+[00:15:57.734] [i] uploaded shader program 'gui/default + gui/texture'
+[00:15:57.751] [ ] loading shader 'gui/default' and 'gui/listbox'
+[00:15:57.751] [ ] compiled vertex shader 'gui/default + gui/listbox'
+[00:15:57.751] [ ] compiled fragment shader 'gui/default + gui/listbox'
+[00:15:57.752] [i] uploaded shader program 'gui/default + gui/listbox'
+[00:15:57.752] [ ] loading shader 'gui/default' and 'gui/scrollbar'
+[00:15:57.752] [ ] compiled vertex shader 'gui/default + gui/scrollbar'
+[00:15:57.752] [ ] compiled fragment shader 'gui/default + gui/scrollbar'
+[00:15:57.752] [i] uploaded shader program 'gui/default + gui/scrollbar'
+[00:15:57.756] [ ] uploaded texture 'gui/images/winMinimize.png'
+[00:15:57.756] [ ] uploaded texture 'gui/images/winFullscreen.png'
+[00:15:57.756] [ ] uploaded texture 'gui/images/winRestore.png'
+[00:15:57.756] [ ] uploaded texture 'gui/images/winClose.png'
+[00:15:57.757] [ ] uploaded texture 'gui/images/winResizeGrip.png'
+[00:15:57.758] [ ] uploaded texture 'gui/images/downGray.png'
+[00:15:57.758] [ ] uploaded texture 'gui/images/upGray.png'
+[00:15:57.758] [ ] uploaded texture 'gui/images/midGray.png'
+[00:15:57.762] [ ] uploaded texture 'gui/brushes/00_RadialGradient.jpg'
+[00:15:57.768] [ ] uploaded texture 'gui/brushes/01_Square.jpg'
+[00:15:57.773] [ ] uploaded texture 'gui/brushes/Cross_1.jpg'
+[00:15:57.779] [ ] uploaded texture 'gui/brushes/Cross_2.jpg'
+[00:15:57.785] [ ] uploaded texture 'gui/brushes/Electric-Edge_1.jpg'
+[00:15:57.791] [ ] uploaded texture 'gui/brushes/Electric-Fur_1.jpg'
+[00:15:57.796] [ ] uploaded texture 'gui/brushes/Hard-Round_2.jpg'
+[00:15:57.802] [ ] uploaded texture 'gui/brushes/Hard-Shape_4.jpg'
+[00:15:57.807] [ ] uploaded texture 'gui/brushes/Hard-Shape_5.jpg'
+[00:15:57.813] [ ] uploaded texture 'gui/brushes/Shape_1.jpg'
+[00:15:57.820] [ ] uploaded texture 'gui/brushes/Smear_1.jpg'
+[00:15:57.826] [ ] uploaded texture 'gui/brushes/Smooth-Edge_2.jpg'
+[00:15:57.831] [ ] uploaded texture 'gui/brushes/Smooth-Edge_3.jpg'
+[00:15:57.838] [ ] uploaded texture 'gui/brushes/Smooth-Edge_4.jpg'
+[00:15:57.843] [ ] uploaded texture 'gui/brushes/Smooth-Edge_5.jpg'
+[00:15:57.848] [ ] uploaded texture 'gui/brushes/Smooth-Edge_6.jpg'
+[00:15:57.852] [ ] uploaded texture 'gui/brushes/Smooth-Shape_1.jpg'
+[00:15:57.854] [ ] uploaded texture 'gui/brushes/Smooth-Shape_3.jpg'
+[00:15:57.856] [ ] uploaded texture 'gui/brushes/Soft_2.jpg'
+[00:15:57.859] [ ] uploaded texture 'gui/brushes/Soft_4.jpg'
+[00:15:57.861] [ ] uploaded texture 'gui/brushes/Splotchy-Soft_1.jpg'
+[00:15:57.864] [ ] uploaded texture 'gui/brushes/Splotchy-Soft_2.jpg'
+[00:15:57.866] [ ] uploaded texture 'gui/brushes/Square_1.jpg'
+[00:15:57.869] [ ] uploaded texture 'gui/brushes/Texture-Round_1.jpg'
+[00:15:57.872] [ ] uploaded texture 'blockButtonTextureT-0'
+[00:15:57.873] [ ] uploaded texture 'blockButtonTextureB-0'
+[00:15:57.874] [ ] uploaded texture 'blockButtonTextureT-1'
+[00:15:57.874] [ ] uploaded texture 'blockButtonTextureB-1'
+[00:15:57.875] [ ] uploaded texture 'blockButtonTextureT-2'
+[00:15:57.875] [ ] uploaded texture 'blockButtonTextureB-2'
+[00:15:57.875] [ ] uploaded texture 'blockButtonTextureT-3'
+[00:15:57.876] [ ] uploaded texture 'blockButtonTextureB-3'
+[00:15:57.876] [ ] uploaded texture 'blockButtonTextureT-4'
+[00:15:57.877] [ ] uploaded texture 'blockButtonTextureB-4'
+[00:15:57.877] [ ] uploaded texture 'blockButtonTextureT-5'
+[00:15:57.878] [ ] uploaded texture 'blockButtonTextureB-5'
+[00:15:57.878] [ ] uploaded texture 'blockButtonTextureT-6'
+[00:15:57.879] [ ] uploaded texture 'blockButtonTextureB-6'
+[00:15:57.879] [ ] uploaded texture 'blockButtonTextureT-7'
+[00:15:57.880] [ ] uploaded texture 'blockButtonTextureB-7'
+[00:15:57.882] [ ] uploaded texture 'gui/images/dropDown.png'
+[00:15:57.882] [ ] loading shader 'gui/default' and 'gui/listitem'
+[00:15:57.882] [ ] compiled vertex shader 'gui/default + gui/listitem'
+[00:15:57.882] [ ] compiled fragment shader 'gui/default + gui/listitem'
+[00:15:57.883] [i] uploaded shader program 'gui/default + gui/listitem'
+[00:15:57.891] [ ] Sky sphere 'Sky' loaded 162 vertices, 162 normals, 960 indices
+[00:15:57.891] [ ] loading shader 'skysphere' and 'skysphere'
+[00:15:57.892] [ ] compiled vertex shader 'skysphere + skysphere'
+[00:15:57.892] [ ] compiled fragment shader 'skysphere + skysphere'
+[00:15:57.892] [i] uploaded shader program 'skysphere + skysphere'
+[00:15:57.927] [ ] uploaded texture 'images/level0-1.png'
+[00:15:57.928] [ ] loading shader 'texture' and 'texture' with these defines enabled: USE_COLOR_MAP, USE_VERTEX_NORMALS
+[00:15:57.928] [ ] compiled vertex shader 'texture + texture'
+[00:15:57.928] [ ] compiled fragment shader 'texture + texture'
+[00:15:57.929] [i] uploaded shader program 'texture + texture'
+[00:15:58.014] [ ] HiOctane Terrain 'Terrain Level 1' loaded 163840 vertices, 163840 normals, 163840 UVs, 245760 indices
+[00:15:58.022] [ ] HiOctane 'Column at 18/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 19/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 20/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 21/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 22/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 23/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 24/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 25/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 26/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 27/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 28/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.023] [ ] HiOctane 'Column at 29/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 30/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 31/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 32/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 33/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 34/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 35/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 36/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 37/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 38/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 39/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 40/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 41/4' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 18/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 19/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 20/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 21/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 22/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 23/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 24/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 25/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 26/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 27/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 28/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.024] [ ] HiOctane 'Column at 29/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 30/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 31/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 32/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 33/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 34/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 35/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 36/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 37/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 38/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 39/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 40/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 41/5' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.025] [ ] HiOctane 'Column at 25/26' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 26/26' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 27/26' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 28/26' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 25/27' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 26/27' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 27/27' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 28/27' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 25/28' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 26/28' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 27/28' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.025] [ ] HiOctane 'Column at 28/28' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 25/29' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 26/29' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 27/29' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 28/29' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 25/30' loaded 120 vertices, 120 normals, 120 UVs, 180 indices
+[00:15:58.026] [ ] HiOctane 'Column at 26/30' loaded 120 vertices, 120 normals, 120 UVs, 180 indices
+[00:15:58.026] [ ] HiOctane 'Column at 25/31' loaded 120 vertices, 120 normals, 120 UVs, 180 indices
+[00:15:58.026] [ ] HiOctane 'Column at 26/31' loaded 120 vertices, 120 normals, 120 UVs, 180 indices
+[00:15:58.026] [ ] HiOctane 'Column at 24/32' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 25/32' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 26/32' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 27/32' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 24/33' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 25/33' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 26/33' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 27/33' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 24/34' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 25/34' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 26/34' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 27/34' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 24/35' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 25/35' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 26/35' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.026] [ ] HiOctane 'Column at 27/35' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 22/36' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 23/36' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 24/36' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 22/37' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 23/37' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 24/37' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 18/38' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 19/38' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 20/38' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 21/38' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 22/38' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 23/38' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 24/38' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.027] [ ] HiOctane 'Column at 18/39' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 19/39' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 20/39' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 21/39' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 18/40' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 19/40' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 20/40' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 21/40' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 18/41' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 19/41' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.027] [ ] HiOctane 'Column at 20/41' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 21/41' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 44/71' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.028] [ ] HiOctane 'Column at 51/71' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.028] [ ] HiOctane 'Column at 45/73' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.028] [ ] HiOctane 'Column at 51/73' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.028] [ ] HiOctane 'Column at 46/75' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.028] [ ] HiOctane 'Column at 51/75' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.028] [ ] HiOctane 'Column at 46/76' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 51/76' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 46/77' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 47/77' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.028] [ ] HiOctane 'Column at 50/77' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.028] [ ] HiOctane 'Column at 51/77' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 46/78' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 51/78' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 46/79' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 51/79' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 46/80' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.028] [ ] HiOctane 'Column at 47/80' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.028] [ ] HiOctane 'Column at 50/80' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 51/80' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 7/81' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.029] [ ] HiOctane 'Column at 8/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 9/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 10/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 11/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 12/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 13/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 14/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 15/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 16/81' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.029] [ ] HiOctane 'Column at 46/81' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 51/81' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 46/82' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 51/82' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 46/83' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 47/83' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 50/83' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 51/83' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 46/84' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 51/84' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 46/85' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 51/85' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 46/86' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.029] [ ] HiOctane 'Column at 47/86' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 50/86' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.029] [ ] HiOctane 'Column at 51/86' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.030] [ ] HiOctane 'Column at 46/87' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.030] [ ] HiOctane 'Column at 51/87' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.030] [ ] HiOctane 'Column at 49/88' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.030] [ ] HiOctane 'Column at 50/88' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.030] [ ] HiOctane 'Column at 51/88' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.030] [ ] HiOctane 'Column at 49/89' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.030] [ ] HiOctane 'Column at 50/89' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.030] [ ] HiOctane 'Column at 49/90' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.030] [ ] HiOctane 'Column at 50/90' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.030] [ ] HiOctane 'Column at 49/91' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.030] [ ] HiOctane 'Column at 50/91' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.030] [ ] HiOctane 'Column at 51/91' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.030] [ ] HiOctane 'Column at 18/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.030] [ ] HiOctane 'Column at 19/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.030] [ ] HiOctane 'Column at 20/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.030] [ ] HiOctane 'Column at 21/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.030] [ ] HiOctane 'Column at 22/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.030] [ ] HiOctane 'Column at 23/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 30/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 31/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 32/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 33/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 34/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 35/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 36/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 38/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 18/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 19/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 20/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 21/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 22/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 23/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 24/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.031] [ ] HiOctane 'Column at 25/96' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.031] [ ] HiOctane 'Column at 26/96' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.031] [ ] HiOctane 'Column at 27/96' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.031] [ ] HiOctane 'Column at 28/96' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.031] [ ] HiOctane 'Column at 29/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.032] [ ] HiOctane 'Column at 30/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.032] [ ] HiOctane 'Column at 31/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.032] [ ] HiOctane 'Column at 32/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.032] [ ] HiOctane 'Column at 33/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.032] [ ] HiOctane 'Column at 34/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.032] [ ] HiOctane 'Column at 35/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.032] [ ] HiOctane 'Column at 36/96' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 38/96' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 25/97' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 28/97' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 36/97' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 38/97' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 25/98' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 28/98' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 36/98' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 38/98' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.032] [ ] HiOctane 'Column at 25/99' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 28/99' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 36/99' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 38/99' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 25/100' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 28/100' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 36/100' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 37/100' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 38/100' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 25/107' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 26/107' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 27/107' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 28/107' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 45/109' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 46/109' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 47/109' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 48/109' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 49/109' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 45/110' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 46/110' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.033] [ ] HiOctane 'Column at 47/110' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.033] [ ] HiOctane 'Column at 48/110' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.033] [ ] HiOctane 'Column at 49/110' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 45/111' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 46/111' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.033] [ ] HiOctane 'Column at 47/111' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.033] [ ] HiOctane 'Column at 48/111' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.033] [ ] HiOctane 'Column at 49/111' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.033] [ ] HiOctane 'Column at 45/112' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 46/112' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.034] [ ] HiOctane 'Column at 47/112' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.034] [ ] HiOctane 'Column at 48/112' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.034] [ ] HiOctane 'Column at 49/112' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 45/113' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 46/113' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 47/113' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 48/113' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 49/113' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 7/116' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.034] [ ] HiOctane 'Column at 16/116' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.034] [ ] HiOctane 'Column at 25/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 26/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 27/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 28/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:15:58.034] [ ] HiOctane 'Column at 7/117' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.034] [ ] HiOctane 'Column at 16/117' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.034] [ ] HiOctane 'Column at 19/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.034] [ ] HiOctane 'Column at 20/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.034] [ ] HiOctane 'Column at 21/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.034] [ ] HiOctane 'Column at 22/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.034] [ ] HiOctane 'Column at 23/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.034] [ ] HiOctane 'Column at 24/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 25/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 26/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 27/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 28/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 29/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 30/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 31/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 32/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 33/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 34/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 35/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 36/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 37/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 38/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 39/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 40/117' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 7/118' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.035] [ ] HiOctane 'Column at 16/118' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.035] [ ] HiOctane 'Column at 19/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 20/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 21/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 22/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 23/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 24/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.035] [ ] HiOctane 'Column at 29/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 30/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 31/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 32/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 33/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 34/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 35/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 36/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 37/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 38/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 39/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 40/118' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:15:58.036] [ ] HiOctane 'Column at 7/119' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 16/119' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 21/119' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 7/120' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 16/120' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 21/120' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 7/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 8/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 9/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 10/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 11/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 12/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 13/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 14/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 15/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.036] [ ] HiOctane 'Column at 16/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.037] [ ] HiOctane 'Column at 17/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.037] [ ] HiOctane 'Column at 18/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.037] [ ] HiOctane 'Column at 19/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.037] [ ] HiOctane 'Column at 20/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.037] [ ] HiOctane 'Column at 21/121' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:15:58.043] [ ] uploaded texture 'images/tmaps/50.png'
+[00:15:58.043] [ ] loading shader 'billboard' and 'billboard' with these defines enabled: USE_COLOR_MAP
+[00:15:58.043] [ ] compiled vertex shader 'billboard + billboard'
+[00:15:58.043] [ ] compiled fragment shader 'billboard + billboard'
+[00:15:58.043] [i] uploaded shader program 'billboard + billboard'
+[00:15:58.044] [ ] uploaded texture 'images/tmaps/39.png'
+[00:15:58.045] [ ] uploaded texture 'images/tmaps/36.png'
+[00:15:58.045] [ ] uploaded texture 'images/tmaps/38.png'
+[00:15:58.045] [ ] uploaded texture 'images/tmaps/29.png'
+[00:15:58.046] [ ] uploaded texture 'images/tmaps/32.png'
+[00:15:58.050] [ ] uploaded texture 'images/stopwatch.png'
+[00:15:58.054] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:15:58.056] [ ] uploaded texture 'models/atlas.png'
+[00:15:58.056] [ ] loading shader 'texture' and 'texture' with these defines enabled: USE_COLOR_MAP, USE_VERTEX_NORMALS, USE_SHADOW_MAP
+[00:15:58.057] [ ] compiled vertex shader 'texture + texture'
+[00:15:58.057] [ ] compiled fragment shader 'texture + texture'
+[00:15:58.057] [i] uploaded shader program 'texture + texture'
+[00:15:58.058] [ ] uploaded texture 'images/tmaps/35.png'
+[00:15:58.060] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:15:58.061] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:15:58.063] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:15:58.064] [ ] uploaded texture 'images/tmaps/34.png'
+[00:15:58.064] [ ] uploaded texture 'images/tmaps/37.png'
+[00:15:58.064] [ ] uploaded texture 'images/tmaps/31.png'
+[00:15:58.067] [i] level 1 setup done
+GRAPH
+\--Amazon Delta Turnpike
+  |--Directional Light
+  |--Sky
+  |--Terrain Level 1
+  |--[unnamed scene node] 
+  |  |--Column at 18/4
+  |  |--Column at 19/4
+  |  |--Column at 20/4
+  |  |--Column at 21/4
+  |  |--Column at 22/4
+  |  |--Column at 23/4
+  |  |--Column at 24/4
+  |  |--Column at 25/4
+  |  |--Column at 26/4
+  |  |--Column at 27/4
+  |  |--Column at 28/4
+  |  |--Column at 29/4
+  |  |--Column at 30/4
+  |  |--Column at 31/4
+  |  |--Column at 32/4
+  |  |--Column at 33/4
+  |  |--Column at 34/4
+  |  |--Column at 35/4
+  |  |--Column at 36/4
+  |  |--Column at 37/4
+  |  |--Column at 38/4
+  |  |--Column at 39/4
+  |  |--Column at 40/4
+  |  |--Column at 41/4
+  |  |--Column at 18/5
+  |  |--Column at 19/5
+  |  |--Column at 20/5
+  |  |--Column at 21/5
+  |  |--Column at 22/5
+  |  |--Column at 23/5
+  |  |--Column at 24/5
+  |  |--Column at 25/5
+  |  |--Column at 26/5
+  |  |--Column at 27/5
+  |  |--Column at 28/5
+  |  |--Column at 29/5
+  |  |--Column at 30/5
+  |  |--Column at 31/5
+  |  |--Column at 32/5
+  |  |--Column at 33/5
+  |  |--Column at 34/5
+  |  |--Column at 35/5
+  |  |--Column at 36/5
+  |  |--Column at 37/5
+  |  |--Column at 38/5
+  |  |--Column at 39/5
+  |  |--Column at 40/5
+  |  |--Column at 41/5
+  |  |--Column at 25/26
+  |  |--Column at 26/26
+  |  |--Column at 27/26
+  |  |--Column at 28/26
+  |  |--Column at 25/27
+  |  |--Column at 26/27
+  |  |--Column at 27/27
+  |  |--Column at 28/27
+  |  |--Column at 25/28
+  |  |--Column at 26/28
+  |  |--Column at 27/28
+  |  |--Column at 28/28
+  |  |--Column at 25/29
+  |  |--Column at 26/29
+  |  |--Column at 27/29
+  |  |--Column at 28/29
+  |  |--Column at 25/30
+  |  |--Column at 26/30
+  |  |--Column at 25/31
+  |  |--Column at 26/31
+  |  |--Column at 24/32
+  |  |--Column at 25/32
+  |  |--Column at 26/32
+  |  |--Column at 27/32
+  |  |--Column at 24/33
+  |  |--Column at 25/33
+  |  |--Column at 26/33
+  |  |--Column at 27/33
+  |  |--Column at 24/34
+  |  |--Column at 25/34
+  |  |--Column at 26/34
+  |  |--Column at 27/34
+  |  |--Column at 24/35
+  |  |--Column at 25/35
+  |  |--Column at 26/35
+  |  |--Column at 27/35
+  |  |--Column at 22/36
+  |  |--Column at 23/36
+  |  |--Column at 24/36
+  |  |--Column at 22/37
+  |  |--Column at 23/37
+  |  |--Column at 24/37
+  |  |--Column at 18/38
+  |  |--Column at 19/38
+  |  |--Column at 20/38
+  |  |--Column at 21/38
+  |  |--Column at 22/38
+  |  |--Column at 23/38
+  |  |--Column at 24/38
+  |  |--Column at 18/39
+  |  |--Column at 19/39
+  |  |--Column at 20/39
+  |  |--Column at 21/39
+  |  |--Column at 18/40
+  |  |--Column at 19/40
+  |  |--Column at 20/40
+  |  |--Column at 21/40
+  |  |--Column at 18/41
+  |  |--Column at 19/41
+  |  |--Column at 20/41
+  |  |--Column at 21/41
+  |  |--Column at 44/71
+  |  |--Column at 51/71
+  |  |--Column at 45/73
+  |  |--Column at 51/73
+  |  |--Column at 46/75
+  |  |--Column at 51/75
+  |  |--Column at 46/76
+  |  |--Column at 51/76
+  |  |--Column at 46/77
+  |  |--Column at 47/77
+  |  |--Column at 50/77
+  |  |--Column at 51/77
+  |  |--Column at 46/78
+  |  |--Column at 51/78
+  |  |--Column at 46/79
+  |  |--Column at 51/79
+  |  |--Column at 46/80
+  |  |--Column at 47/80
+  |  |--Column at 50/80
+  |  |--Column at 51/80
+  |  |--Column at 7/81
+  |  |--Column at 8/81
+  |  |--Column at 9/81
+  |  |--Column at 10/81
+  |  |--Column at 11/81
+  |  |--Column at 12/81
+  |  |--Column at 13/81
+  |  |--Column at 14/81
+  |  |--Column at 15/81
+  |  |--Column at 16/81
+  |  |--Column at 46/81
+  |  |--Column at 51/81
+  |  |--Column at 46/82
+  |  |--Column at 51/82
+  |  |--Column at 46/83
+  |  |--Column at 47/83
+  |  |--Column at 50/83
+  |  |--Column at 51/83
+  |  |--Column at 46/84
+  |  |--Column at 51/84
+  |  |--Column at 46/85
+  |  |--Column at 51/85
+  |  |--Column at 46/86
+  |  |--Column at 47/86
+  |  |--Column at 50/86
+  |  |--Column at 51/86
+  |  |--Column at 46/87
+  |  |--Column at 51/87
+  |  |--Column at 49/88
+  |  |--Column at 50/88
+  |  |--Column at 51/88
+  |  |--Column at 49/89
+  |  |--Column at 50/89
+  |  |--Column at 49/90
+  |  |--Column at 50/90
+  |  |--Column at 49/91
+  |  |--Column at 50/91
+  |  |--Column at 51/91
+  |  |--Column at 18/95
+  |  |--Column at 19/95
+  |  |--Column at 20/95
+  |  |--Column at 21/95
+  |  |--Column at 22/95
+  |  |--Column at 23/95
+  |  |--Column at 30/95
+  |  |--Column at 31/95
+  |  |--Column at 32/95
+  |  |--Column at 33/95
+  |  |--Column at 34/95
+  |  |--Column at 35/95
+  |  |--Column at 36/95
+  |  |--Column at 38/95
+  |  |--Column at 18/96
+  |  |--Column at 19/96
+  |  |--Column at 20/96
+  |  |--Column at 21/96
+  |  |--Column at 22/96
+  |  |--Column at 23/96
+  |  |--Column at 24/96
+  |  |--Column at 25/96
+  |  |--Column at 26/96
+  |  |--Column at 27/96
+  |  |--Column at 28/96
+  |  |--Column at 29/96
+  |  |--Column at 30/96
+  |  |--Column at 31/96
+  |  |--Column at 32/96
+  |  |--Column at 33/96
+  |  |--Column at 34/96
+  |  |--Column at 35/96
+  |  |--Column at 36/96
+  |  |--Column at 38/96
+  |  |--Column at 25/97
+  |  |--Column at 28/97
+  |  |--Column at 36/97
+  |  |--Column at 38/97
+  |  |--Column at 25/98
+  |  |--Column at 28/98
+  |  |--Column at 36/98
+  |  |--Column at 38/98
+  |  |--Column at 25/99
+  |  |--Column at 28/99
+  |  |--Column at 36/99
+  |  |--Column at 38/99
+  |  |--Column at 25/100
+  |  |--Column at 28/100
+  |  |--Column at 36/100
+  |  |--Column at 37/100
+  |  |--Column at 38/100
+  |  |--Column at 25/107
+  |  |--Column at 26/107
+  |  |--Column at 27/107
+  |  |--Column at 28/107
+  |  |--Column at 45/109
+  |  |--Column at 46/109
+  |  |--Column at 47/109
+  |  |--Column at 48/109
+  |  |--Column at 49/109
+  |  |--Column at 45/110
+  |  |--Column at 46/110
+  |  |--Column at 47/110
+  |  |--Column at 48/110
+  |  |--Column at 49/110
+  |  |--Column at 45/111
+  |  |--Column at 46/111
+  |  |--Column at 47/111
+  |  |--Column at 48/111
+  |  |--Column at 49/111
+  |  |--Column at 45/112
+  |  |--Column at 46/112
+  |  |--Column at 47/112
+  |  |--Column at 48/112
+  |  |--Column at 49/112
+  |  |--Column at 45/113
+  |  |--Column at 46/113
+  |  |--Column at 47/113
+  |  |--Column at 48/113
+  |  |--Column at 49/113
+  |  |--Column at 7/116
+  |  |--Column at 16/116
+  |  |--Column at 25/116
+  |  |--Column at 26/116
+  |  |--Column at 27/116
+  |  |--Column at 28/116
+  |  |--Column at 7/117
+  |  |--Column at 16/117
+  |  |--Column at 19/117
+  |  |--Column at 20/117
+  |  |--Column at 21/117
+  |  |--Column at 22/117
+  |  |--Column at 23/117
+  |  |--Column at 24/117
+  |  |--Column at 25/117
+  |  |--Column at 26/117
+  |  |--Column at 27/117
+  |  |--Column at 28/117
+  |  |--Column at 29/117
+  |  |--Column at 30/117
+  |  |--Column at 31/117
+  |  |--Column at 32/117
+  |  |--Column at 33/117
+  |  |--Column at 34/117
+  |  |--Column at 35/117
+  |  |--Column at 36/117
+  |  |--Column at 37/117
+  |  |--Column at 38/117
+  |  |--Column at 39/117
+  |  |--Column at 40/117
+  |  |--Column at 7/118
+  |  |--Column at 16/118
+  |  |--Column at 19/118
+  |  |--Column at 20/118
+  |  |--Column at 21/118
+  |  |--Column at 22/118
+  |  |--Column at 23/118
+  |  |--Column at 24/118
+  |  |--Column at 29/118
+  |  |--Column at 30/118
+  |  |--Column at 31/118
+  |  |--Column at 32/118
+  |  |--Column at 33/118
+  |  |--Column at 34/118
+  |  |--Column at 35/118
+  |  |--Column at 36/118
+  |  |--Column at 37/118
+  |  |--Column at 38/118
+  |  |--Column at 39/118
+  |  |--Column at 40/118
+  |  |--Column at 7/119
+  |  |--Column at 16/119
+  |  |--Column at 21/119
+  |  |--Column at 7/120
+  |  |--Column at 16/120
+  |  |--Column at 21/120
+  |  |--Column at 7/121
+  |  |--Column at 8/121
+  |  |--Column at 9/121
+  |  |--Column at 10/121
+  |  |--Column at 11/121
+  |  |--Column at 12/121
+  |  |--Column at 13/121
+  |  |--Column at 14/121
+  |  |--Column at 15/121
+  |  |--Column at 16/121
+  |  |--Column at 17/121
+  |  |--Column at 18/121
+  |  |--Column at 19/121
+  |  |--Column at 20/121
+  |  \--Column at 21/121
+  |--[unnamed scene node] 
+  |  |--Checkpoint line 1
+  |  |--Checkpoint line 2
+  |  |--Checkpoint line 3
+  |  |--Checkpoint line 4
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Craft RECOV0-0
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Craft RECOV0-0
+  |  |--Craft RECOV0-0
+  |  |--Craft RECOV0-0
+  |  |--Billboard
+  |  |--Billboard
+  |  \--Billboard
+  |--Waypoints
+  |  |--Waypoint line 27 to 115
+  |  |--Waypoint line 39 to 95
+  |  |--Waypoint line 48 to 121
+  |  |--Waypoint line 70 to 113
+  |  |--Waypoint line 84 to 115
+  |  |--Waypoint line 87 to 88
+  |  |--Waypoint line 88 to 102
+  |  |--Waypoint line 92 to 115
+  |  |--Waypoint line 95 to 96
+  |  |--Waypoint line 96 to 97
+  |  |--Waypoint line 97 to 98
+  |  |--Waypoint line 98 to 99
+  |  |--Waypoint line 99 to 103
+  |  |--Waypoint line 101 to 48
+  |  |--Waypoint line 102 to 111
+  |  |--Waypoint line 103 to 104
+  |  |--Waypoint line 104 to 106
+  |  |--Waypoint line 105 to 87
+  |  |--Waypoint line 106 to 70
+  |  |--Waypoint line 107 to 87
+  |  |--Waypoint line 111 to 112
+  |  |--Waypoint line 112 to 117
+  |  |--Waypoint line 113 to 117
+  |  |--Waypoint line 114 to 115
+  |  |--Waypoint line 115 to 116
+  |  |--Waypoint line 116 to 101
+  |  |--Waypoint line 117 to 118
+  |  |--Waypoint line 118 to 119
+  |  |--Waypoint line 119 to 101
+  |  |--Waypoint line 120 to 101
+  |  \--Waypoint line 121 to 39
+  |--Wall Segments
+  |  |--Wall segment line 5 to 6
+  |  |--Wall segment line 6 to 29
+  |  |--Wall segment line 7 to 8
+  |  |--Wall segment line 8 to 53
+  |  |--Wall segment line 9 to 10
+  |  |--Wall segment line 10 to 11
+  |  |--Wall segment line 11 to 12
+  |  |--Wall segment line 12 to 13
+  |  |--Wall segment line 13 to 14
+  |  |--Wall segment line 14 to 15
+  |  |--Wall segment line 15 to 16
+  |  |--Wall segment line 16 to 94
+  |  |--Wall segment line 17 to 46
+  |  |--Wall segment line 18 to 21
+  |  |--Wall segment line 19 to 63
+  |  |--Wall segment line 20 to 19
+  |  |--Wall segment line 21 to 93
+  |  |--Wall segment line 22 to 23
+  |  |--Wall segment line 23 to 24
+  |  |--Wall segment line 24 to 25
+  |  |--Wall segment line 28 to 7
+  |  |--Wall segment line 29 to 52
+  |  |--Wall segment line 30 to 31
+  |  |--Wall segment line 31 to 32
+  |  |--Wall segment line 32 to 33
+  |  |--Wall segment line 33 to 34
+  |  |--Wall segment line 34 to 35
+  |  |--Wall segment line 35 to 36
+  |  |--Wall segment line 36 to 131
+  |  |--Wall segment line 37 to 38
+  |  |--Wall segment line 38 to 59
+  |  |--Wall segment line 45 to 18
+  |  |--Wall segment line 46 to 20
+  |  |--Wall segment line 52 to 64
+  |  |--Wall segment line 53 to 9
+  |  |--Wall segment line 54 to 37
+  |  |--Wall segment line 55 to 56
+  |  |--Wall segment line 56 to 45
+  |  |--Wall segment line 57 to 125
+  |  |--Wall segment line 59 to 5
+  |  |--Wall segment line 62 to 17
+  |  |--Wall segment line 63 to 62
+  |  |--Wall segment line 64 to 67
+  |  |--Wall segment line 65 to 30
+  |  |--Wall segment line 67 to 68
+  |  |--Wall segment line 68 to 69
+  |  |--Wall segment line 69 to 110
+  |  |--Wall segment line 72 to 73
+  |  |--Wall segment line 73 to 74
+  |  |--Wall segment line 74 to 75
+  |  |--Wall segment line 75 to 57
+  |  |--Wall segment line 78 to 65
+  |  |--Wall segment line 79 to 78
+  |  |--Wall segment line 80 to 79
+  |  |--Wall segment line 81 to 80
+  |  |--Wall segment line 82 to 81
+  |  |--Wall segment line 83 to 82
+  |  |--Wall segment line 85 to 83
+  |  |--Wall segment line 93 to 22
+  |  |--Wall segment line 94 to 122
+  |  |--Wall segment line 108 to 72
+  |  |--Wall segment line 110 to 108
+  |  |--Wall segment line 122 to 123
+  |  |--Wall segment line 123 to 55
+  |  |--Wall segment line 124 to 54
+  |  |--Wall segment line 125 to 124
+  |  \--Wall segment line 131 to 85
+  |--Line
+  |--Line
+  \--Line
+
+[00:15:58.075] [ ] FBO 'Default' (1200/660): The framebuffer is complete and valid for rendering.
+[00:15:58.076] [ ] FBO 'Shadow' (2048/2048): The framebuffer is complete and valid for rendering.
+[00:16:00.245] [ ] Sky sphere 'Sky' loaded 162 vertices, 162 normals, 960 indices
+[00:16:00.264] [ ] uploaded texture 'images/level0-4.png'
+[00:16:00.346] [ ] HiOctane Terrain 'Terrain Level 4' loaded 163840 vertices, 163840 normals, 163840 UVs, 245760 indices
+[00:16:00.359] [ ] HiOctane 'Column at 31/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.359] [ ] HiOctane 'Column at 32/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.359] [ ] HiOctane 'Column at 33/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.359] [ ] HiOctane 'Column at 34/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.359] [ ] HiOctane 'Column at 35/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.359] [ ] HiOctane 'Column at 36/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.359] [ ] HiOctane 'Column at 37/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 38/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 39/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 40/3' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 31/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 32/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 33/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 34/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 35/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 36/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 37/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 38/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 39/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 40/4' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.360] [ ] HiOctane 'Column at 21/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 22/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 23/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 24/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 25/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 26/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 27/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 28/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 29/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.360] [ ] HiOctane 'Column at 30/5' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 31/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 32/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 33/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 34/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 35/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 36/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 37/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 38/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 39/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 40/5' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 21/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 22/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 23/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 24/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 25/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 26/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 27/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 28/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 29/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 30/6' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.361] [ ] HiOctane 'Column at 31/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 32/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 33/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 34/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 35/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.361] [ ] HiOctane 'Column at 36/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.365] [ ] HiOctane 'Column at 37/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.366] [ ] HiOctane 'Column at 38/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.366] [ ] HiOctane 'Column at 39/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.366] [ ] HiOctane 'Column at 40/6' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.366] [ ] HiOctane 'Column at 21/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 22/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 23/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 24/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 25/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 26/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 27/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 28/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 29/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 30/7' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.366] [ ] HiOctane 'Column at 31/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.366] [ ] HiOctane 'Column at 32/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.366] [ ] HiOctane 'Column at 33/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.366] [ ] HiOctane 'Column at 34/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.366] [ ] HiOctane 'Column at 35/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 36/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 37/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 38/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 39/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 40/7' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 31/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 32/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 33/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 34/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 35/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 36/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 37/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 38/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 39/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 40/8' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 31/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 32/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 33/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 34/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 35/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 36/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 37/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 38/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 39/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 40/9' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 31/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 32/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.367] [ ] HiOctane 'Column at 33/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.368] [ ] HiOctane 'Column at 34/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.368] [ ] HiOctane 'Column at 35/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.368] [ ] HiOctane 'Column at 36/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.368] [ ] HiOctane 'Column at 37/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.368] [ ] HiOctane 'Column at 38/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.368] [ ] HiOctane 'Column at 39/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.368] [ ] HiOctane 'Column at 40/10' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.368] [ ] HiOctane 'Column at 31/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.368] [ ] HiOctane 'Column at 32/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.368] [ ] HiOctane 'Column at 33/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.368] [ ] HiOctane 'Column at 34/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 35/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 36/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 37/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 38/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 39/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 40/11' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 31/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 32/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 33/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 34/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 35/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 36/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 37/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 38/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 39/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 40/12' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.369] [ ] HiOctane 'Column at 42/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 43/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 44/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 45/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 46/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 47/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 48/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 49/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 50/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.369] [ ] HiOctane 'Column at 51/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.370] [ ] HiOctane 'Column at 52/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.370] [ ] HiOctane 'Column at 53/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.370] [ ] HiOctane 'Column at 54/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.370] [ ] HiOctane 'Column at 55/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.370] [ ] HiOctane 'Column at 56/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.370] [ ] HiOctane 'Column at 57/22' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.370] [ ] HiOctane 'Column at 6/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.370] [ ] HiOctane 'Column at 7/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.370] [ ] HiOctane 'Column at 8/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.370] [ ] HiOctane 'Column at 9/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.370] [ ] HiOctane 'Column at 10/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.370] [ ] HiOctane 'Column at 11/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.370] [ ] HiOctane 'Column at 12/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.370] [ ] HiOctane 'Column at 13/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.370] [ ] HiOctane 'Column at 14/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 15/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 16/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 17/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 18/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 19/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 20/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 21/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 22/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 23/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 24/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 25/55' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 6/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 7/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 8/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 9/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 10/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 11/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 12/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 13/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 14/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 15/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 16/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 17/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.371] [ ] HiOctane 'Column at 18/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.372] [ ] HiOctane 'Column at 19/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.372] [ ] HiOctane 'Column at 20/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.372] [ ] HiOctane 'Column at 21/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.372] [ ] HiOctane 'Column at 22/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.372] [ ] HiOctane 'Column at 23/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.372] [ ] HiOctane 'Column at 24/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.372] [ ] HiOctane 'Column at 25/56' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.372] [ ] HiOctane 'Column at 10/81' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 11/81' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 12/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.372] [ ] HiOctane 'Column at 13/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.372] [ ] HiOctane 'Column at 14/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.372] [ ] HiOctane 'Column at 15/81' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.372] [ ] HiOctane 'Column at 16/81' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 17/81' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 10/82' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 11/82' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 12/82' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.372] [ ] HiOctane 'Column at 13/82' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.372] [ ] HiOctane 'Column at 14/82' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.372] [ ] HiOctane 'Column at 15/82' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.372] [ ] HiOctane 'Column at 16/82' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 17/82' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 10/83' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 11/83' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.372] [ ] HiOctane 'Column at 16/83' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 17/83' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 10/84' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 11/84' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 12/84' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 13/84' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 14/84' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 15/84' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 16/84' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 17/84' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 10/85' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 11/85' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 12/85' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 13/85' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 14/85' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 15/85' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 16/85' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 17/85' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 10/86' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 11/86' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 16/86' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 17/86' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 10/87' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 11/87' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.373] [ ] HiOctane 'Column at 12/87' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 13/87' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 14/87' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 15/87' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.373] [ ] HiOctane 'Column at 16/87' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 17/87' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 10/88' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 11/88' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 12/88' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 13/88' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 14/88' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 15/88' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 16/88' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 17/88' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 10/89' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 11/89' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 16/89' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 17/89' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 10/90' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 11/90' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 12/90' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 13/90' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 14/90' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 15/90' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 16/90' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 17/90' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 10/91' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 11/91' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.374] [ ] HiOctane 'Column at 12/91' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 13/91' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 14/91' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.374] [ ] HiOctane 'Column at 15/91' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 16/91' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 17/91' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 10/92' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 11/92' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 16/92' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 17/92' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 10/93' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 11/93' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 12/93' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 13/93' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 14/93' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 15/93' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 16/93' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 17/93' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 10/94' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 11/94' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 12/94' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 13/94' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 14/94' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 15/94' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.375] [ ] HiOctane 'Column at 16/94' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 17/94' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 10/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 11/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 16/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.375] [ ] HiOctane 'Column at 17/95' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 10/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 11/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 12/96' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.376] [ ] HiOctane 'Column at 13/96' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.376] [ ] HiOctane 'Column at 14/96' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.376] [ ] HiOctane 'Column at 15/96' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.376] [ ] HiOctane 'Column at 16/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 17/96' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 10/97' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 11/97' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 16/97' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 17/97' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 10/98' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 11/98' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 12/98' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.376] [ ] HiOctane 'Column at 13/98' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.376] [ ] HiOctane 'Column at 14/98' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.376] [ ] HiOctane 'Column at 15/98' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.376] [ ] HiOctane 'Column at 16/98' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 17/98' loaded 72 vertices, 72 normals, 72 UVs, 108 indices
+[00:16:00.376] [ ] HiOctane 'Column at 10/99' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.376] [ ] HiOctane 'Column at 11/99' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.376] [ ] HiOctane 'Column at 12/99' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 13/99' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 14/99' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 15/99' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 16/99' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 17/99' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 10/100' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 11/100' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 12/100' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 13/100' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 14/100' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 15/100' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 16/100' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 17/100' loaded 48 vertices, 48 normals, 48 UVs, 72 indices
+[00:16:00.377] [ ] HiOctane 'Column at 35/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 36/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 37/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 38/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 39/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 40/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 41/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 42/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 43/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 44/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 45/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 46/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 47/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 48/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 49/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 50/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.377] [ ] HiOctane 'Column at 51/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 52/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 53/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 54/104' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 25/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 26/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 27/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 28/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 29/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 30/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 31/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 32/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 33/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 34/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 35/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 36/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 37/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 38/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 39/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 40/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 41/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 42/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 43/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 44/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 45/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 46/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 47/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 48/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.378] [ ] HiOctane 'Column at 49/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 50/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 51/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 52/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 53/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 54/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 55/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 56/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 57/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 58/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 59/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 60/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 61/114' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 42/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 43/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 44/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 45/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 46/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 47/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 48/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 49/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 50/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 51/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 52/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 53/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 54/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 55/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 56/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.379] [ ] HiOctane 'Column at 57/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 58/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 59/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 60/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 61/115' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 42/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 43/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 44/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 45/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 46/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 47/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 48/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 49/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 50/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 51/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 52/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 53/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 54/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 55/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 56/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 57/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 58/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.380] [ ] HiOctane 'Column at 59/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 60/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 61/116' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 66/142' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 67/142' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 68/142' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 69/142' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 66/143' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 67/143' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 68/143' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 69/143' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 66/144' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 67/144' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 68/144' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] HiOctane 'Column at 69/144' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.381] [ ] uploaded texture 'images/tmaps/41.png'
+[00:16:00.383] [ ] loading shader 'light' and 'light'
+[00:16:00.383] [ ] compiled vertex shader 'light + light'
+[00:16:00.383] [ ] compiled fragment shader 'light + light'
+[00:16:00.383] [i] uploaded shader program 'light + light'
+[00:16:00.386] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:16:00.387] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:16:00.387] [ ] uploaded texture 'images/tmaps/40.png'
+[00:16:00.392] [ ] uploaded texture 'images/tmaps/33.png'
+[00:16:00.395] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:16:00.401] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:16:00.402] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:16:00.403] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:16:00.405] [i] WavefrontModel 'Craft RECOV0-0' loaded 438 vertices, 438 normals, 438 texture coords, 438 indices, using Triangles -> 146 polygons
+[00:16:00.405] [ ] HiOctane 'Column at 91/29' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.405] [ ] HiOctane 'Column at 92/29' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.405] [ ] HiOctane 'Column at 93/29' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.405] [ ] HiOctane 'Column at 94/29' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.405] [ ] HiOctane 'Column at 95/29' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.406] [ ] HiOctane 'Column at 96/29' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.406] [ ] HiOctane 'Column at 97/29' loaded 24 vertices, 24 normals, 24 UVs, 36 indices
+[00:16:00.408] [i] level 4 setup done
+GRAPH
+\--New Chernobyl Central
+  |--Directional Light
+  |--Sky
+  |--Terrain Level 4
+  |--[unnamed scene node] 
+  |  |--Column at 31/3
+  |  |--Column at 32/3
+  |  |--Column at 33/3
+  |  |--Column at 34/3
+  |  |--Column at 35/3
+  |  |--Column at 36/3
+  |  |--Column at 37/3
+  |  |--Column at 38/3
+  |  |--Column at 39/3
+  |  |--Column at 40/3
+  |  |--Column at 31/4
+  |  |--Column at 32/4
+  |  |--Column at 33/4
+  |  |--Column at 34/4
+  |  |--Column at 35/4
+  |  |--Column at 36/4
+  |  |--Column at 37/4
+  |  |--Column at 38/4
+  |  |--Column at 39/4
+  |  |--Column at 40/4
+  |  |--Column at 21/5
+  |  |--Column at 22/5
+  |  |--Column at 23/5
+  |  |--Column at 24/5
+  |  |--Column at 25/5
+  |  |--Column at 26/5
+  |  |--Column at 27/5
+  |  |--Column at 28/5
+  |  |--Column at 29/5
+  |  |--Column at 30/5
+  |  |--Column at 31/5
+  |  |--Column at 32/5
+  |  |--Column at 33/5
+  |  |--Column at 34/5
+  |  |--Column at 35/5
+  |  |--Column at 36/5
+  |  |--Column at 37/5
+  |  |--Column at 38/5
+  |  |--Column at 39/5
+  |  |--Column at 40/5
+  |  |--Column at 21/6
+  |  |--Column at 22/6
+  |  |--Column at 23/6
+  |  |--Column at 24/6
+  |  |--Column at 25/6
+  |  |--Column at 26/6
+  |  |--Column at 27/6
+  |  |--Column at 28/6
+  |  |--Column at 29/6
+  |  |--Column at 30/6
+  |  |--Column at 31/6
+  |  |--Column at 32/6
+  |  |--Column at 33/6
+  |  |--Column at 34/6
+  |  |--Column at 35/6
+  |  |--Column at 36/6
+  |  |--Column at 37/6
+  |  |--Column at 38/6
+  |  |--Column at 39/6
+  |  |--Column at 40/6
+  |  |--Column at 21/7
+  |  |--Column at 22/7
+  |  |--Column at 23/7
+  |  |--Column at 24/7
+  |  |--Column at 25/7
+  |  |--Column at 26/7
+  |  |--Column at 27/7
+  |  |--Column at 28/7
+  |  |--Column at 29/7
+  |  |--Column at 30/7
+  |  |--Column at 31/7
+  |  |--Column at 32/7
+  |  |--Column at 33/7
+  |  |--Column at 34/7
+  |  |--Column at 35/7
+  |  |--Column at 36/7
+  |  |--Column at 37/7
+  |  |--Column at 38/7
+  |  |--Column at 39/7
+  |  |--Column at 40/7
+  |  |--Column at 31/8
+  |  |--Column at 32/8
+  |  |--Column at 33/8
+  |  |--Column at 34/8
+  |  |--Column at 35/8
+  |  |--Column at 36/8
+  |  |--Column at 37/8
+  |  |--Column at 38/8
+  |  |--Column at 39/8
+  |  |--Column at 40/8
+  |  |--Column at 31/9
+  |  |--Column at 32/9
+  |  |--Column at 33/9
+  |  |--Column at 34/9
+  |  |--Column at 35/9
+  |  |--Column at 36/9
+  |  |--Column at 37/9
+  |  |--Column at 38/9
+  |  |--Column at 39/9
+  |  |--Column at 40/9
+  |  |--Column at 31/10
+  |  |--Column at 32/10
+  |  |--Column at 33/10
+  |  |--Column at 34/10
+  |  |--Column at 35/10
+  |  |--Column at 36/10
+  |  |--Column at 37/10
+  |  |--Column at 38/10
+  |  |--Column at 39/10
+  |  |--Column at 40/10
+  |  |--Column at 31/11
+  |  |--Column at 32/11
+  |  |--Column at 33/11
+  |  |--Column at 34/11
+  |  |--Column at 35/11
+  |  |--Column at 36/11
+  |  |--Column at 37/11
+  |  |--Column at 38/11
+  |  |--Column at 39/11
+  |  |--Column at 40/11
+  |  |--Column at 31/12
+  |  |--Column at 32/12
+  |  |--Column at 33/12
+  |  |--Column at 34/12
+  |  |--Column at 35/12
+  |  |--Column at 36/12
+  |  |--Column at 37/12
+  |  |--Column at 38/12
+  |  |--Column at 39/12
+  |  |--Column at 40/12
+  |  |--Column at 42/22
+  |  |--Column at 43/22
+  |  |--Column at 44/22
+  |  |--Column at 45/22
+  |  |--Column at 46/22
+  |  |--Column at 47/22
+  |  |--Column at 48/22
+  |  |--Column at 49/22
+  |  |--Column at 50/22
+  |  |--Column at 51/22
+  |  |--Column at 52/22
+  |  |--Column at 53/22
+  |  |--Column at 54/22
+  |  |--Column at 55/22
+  |  |--Column at 56/22
+  |  |--Column at 57/22
+  |  |--Column at 6/55
+  |  |--Column at 7/55
+  |  |--Column at 8/55
+  |  |--Column at 9/55
+  |  |--Column at 10/55
+  |  |--Column at 11/55
+  |  |--Column at 12/55
+  |  |--Column at 13/55
+  |  |--Column at 14/55
+  |  |--Column at 15/55
+  |  |--Column at 16/55
+  |  |--Column at 17/55
+  |  |--Column at 18/55
+  |  |--Column at 19/55
+  |  |--Column at 20/55
+  |  |--Column at 21/55
+  |  |--Column at 22/55
+  |  |--Column at 23/55
+  |  |--Column at 24/55
+  |  |--Column at 25/55
+  |  |--Column at 6/56
+  |  |--Column at 7/56
+  |  |--Column at 8/56
+  |  |--Column at 9/56
+  |  |--Column at 10/56
+  |  |--Column at 11/56
+  |  |--Column at 12/56
+  |  |--Column at 13/56
+  |  |--Column at 14/56
+  |  |--Column at 15/56
+  |  |--Column at 16/56
+  |  |--Column at 17/56
+  |  |--Column at 18/56
+  |  |--Column at 19/56
+  |  |--Column at 20/56
+  |  |--Column at 21/56
+  |  |--Column at 22/56
+  |  |--Column at 23/56
+  |  |--Column at 24/56
+  |  |--Column at 25/56
+  |  |--Column at 10/81
+  |  |--Column at 11/81
+  |  |--Column at 12/81
+  |  |--Column at 13/81
+  |  |--Column at 14/81
+  |  |--Column at 15/81
+  |  |--Column at 16/81
+  |  |--Column at 17/81
+  |  |--Column at 10/82
+  |  |--Column at 11/82
+  |  |--Column at 12/82
+  |  |--Column at 13/82
+  |  |--Column at 14/82
+  |  |--Column at 15/82
+  |  |--Column at 16/82
+  |  |--Column at 17/82
+  |  |--Column at 10/83
+  |  |--Column at 11/83
+  |  |--Column at 16/83
+  |  |--Column at 17/83
+  |  |--Column at 10/84
+  |  |--Column at 11/84
+  |  |--Column at 12/84
+  |  |--Column at 13/84
+  |  |--Column at 14/84
+  |  |--Column at 15/84
+  |  |--Column at 16/84
+  |  |--Column at 17/84
+  |  |--Column at 10/85
+  |  |--Column at 11/85
+  |  |--Column at 12/85
+  |  |--Column at 13/85
+  |  |--Column at 14/85
+  |  |--Column at 15/85
+  |  |--Column at 16/85
+  |  |--Column at 17/85
+  |  |--Column at 10/86
+  |  |--Column at 11/86
+  |  |--Column at 16/86
+  |  |--Column at 17/86
+  |  |--Column at 10/87
+  |  |--Column at 11/87
+  |  |--Column at 12/87
+  |  |--Column at 13/87
+  |  |--Column at 14/87
+  |  |--Column at 15/87
+  |  |--Column at 16/87
+  |  |--Column at 17/87
+  |  |--Column at 10/88
+  |  |--Column at 11/88
+  |  |--Column at 12/88
+  |  |--Column at 13/88
+  |  |--Column at 14/88
+  |  |--Column at 15/88
+  |  |--Column at 16/88
+  |  |--Column at 17/88
+  |  |--Column at 10/89
+  |  |--Column at 11/89
+  |  |--Column at 16/89
+  |  |--Column at 17/89
+  |  |--Column at 10/90
+  |  |--Column at 11/90
+  |  |--Column at 12/90
+  |  |--Column at 13/90
+  |  |--Column at 14/90
+  |  |--Column at 15/90
+  |  |--Column at 16/90
+  |  |--Column at 17/90
+  |  |--Column at 10/91
+  |  |--Column at 11/91
+  |  |--Column at 12/91
+  |  |--Column at 13/91
+  |  |--Column at 14/91
+  |  |--Column at 15/91
+  |  |--Column at 16/91
+  |  |--Column at 17/91
+  |  |--Column at 10/92
+  |  |--Column at 11/92
+  |  |--Column at 16/92
+  |  |--Column at 17/92
+  |  |--Column at 10/93
+  |  |--Column at 11/93
+  |  |--Column at 12/93
+  |  |--Column at 13/93
+  |  |--Column at 14/93
+  |  |--Column at 15/93
+  |  |--Column at 16/93
+  |  |--Column at 17/93
+  |  |--Column at 10/94
+  |  |--Column at 11/94
+  |  |--Column at 12/94
+  |  |--Column at 13/94
+  |  |--Column at 14/94
+  |  |--Column at 15/94
+  |  |--Column at 16/94
+  |  |--Column at 17/94
+  |  |--Column at 10/95
+  |  |--Column at 11/95
+  |  |--Column at 16/95
+  |  |--Column at 17/95
+  |  |--Column at 10/96
+  |  |--Column at 11/96
+  |  |--Column at 12/96
+  |  |--Column at 13/96
+  |  |--Column at 14/96
+  |  |--Column at 15/96
+  |  |--Column at 16/96
+  |  |--Column at 17/96
+  |  |--Column at 10/97
+  |  |--Column at 11/97
+  |  |--Column at 16/97
+  |  |--Column at 17/97
+  |  |--Column at 10/98
+  |  |--Column at 11/98
+  |  |--Column at 12/98
+  |  |--Column at 13/98
+  |  |--Column at 14/98
+  |  |--Column at 15/98
+  |  |--Column at 16/98
+  |  |--Column at 17/98
+  |  |--Column at 10/99
+  |  |--Column at 11/99
+  |  |--Column at 12/99
+  |  |--Column at 13/99
+  |  |--Column at 14/99
+  |  |--Column at 15/99
+  |  |--Column at 16/99
+  |  |--Column at 17/99
+  |  |--Column at 10/100
+  |  |--Column at 11/100
+  |  |--Column at 12/100
+  |  |--Column at 13/100
+  |  |--Column at 14/100
+  |  |--Column at 15/100
+  |  |--Column at 16/100
+  |  |--Column at 17/100
+  |  |--Column at 35/104
+  |  |--Column at 36/104
+  |  |--Column at 37/104
+  |  |--Column at 38/104
+  |  |--Column at 39/104
+  |  |--Column at 40/104
+  |  |--Column at 41/104
+  |  |--Column at 42/104
+  |  |--Column at 43/104
+  |  |--Column at 44/104
+  |  |--Column at 45/104
+  |  |--Column at 46/104
+  |  |--Column at 47/104
+  |  |--Column at 48/104
+  |  |--Column at 49/104
+  |  |--Column at 50/104
+  |  |--Column at 51/104
+  |  |--Column at 52/104
+  |  |--Column at 53/104
+  |  |--Column at 54/104
+  |  |--Column at 25/114
+  |  |--Column at 26/114
+  |  |--Column at 27/114
+  |  |--Column at 28/114
+  |  |--Column at 29/114
+  |  |--Column at 30/114
+  |  |--Column at 31/114
+  |  |--Column at 32/114
+  |  |--Column at 33/114
+  |  |--Column at 34/114
+  |  |--Column at 35/114
+  |  |--Column at 36/114
+  |  |--Column at 37/114
+  |  |--Column at 38/114
+  |  |--Column at 39/114
+  |  |--Column at 40/114
+  |  |--Column at 41/114
+  |  |--Column at 42/114
+  |  |--Column at 43/114
+  |  |--Column at 44/114
+  |  |--Column at 45/114
+  |  |--Column at 46/114
+  |  |--Column at 47/114
+  |  |--Column at 48/114
+  |  |--Column at 49/114
+  |  |--Column at 50/114
+  |  |--Column at 51/114
+  |  |--Column at 52/114
+  |  |--Column at 53/114
+  |  |--Column at 54/114
+  |  |--Column at 55/114
+  |  |--Column at 56/114
+  |  |--Column at 57/114
+  |  |--Column at 58/114
+  |  |--Column at 59/114
+  |  |--Column at 60/114
+  |  |--Column at 61/114
+  |  |--Column at 42/115
+  |  |--Column at 43/115
+  |  |--Column at 44/115
+  |  |--Column at 45/115
+  |  |--Column at 46/115
+  |  |--Column at 47/115
+  |  |--Column at 48/115
+  |  |--Column at 49/115
+  |  |--Column at 50/115
+  |  |--Column at 51/115
+  |  |--Column at 52/115
+  |  |--Column at 53/115
+  |  |--Column at 54/115
+  |  |--Column at 55/115
+  |  |--Column at 56/115
+  |  |--Column at 57/115
+  |  |--Column at 58/115
+  |  |--Column at 59/115
+  |  |--Column at 60/115
+  |  |--Column at 61/115
+  |  |--Column at 42/116
+  |  |--Column at 43/116
+  |  |--Column at 44/116
+  |  |--Column at 45/116
+  |  |--Column at 46/116
+  |  |--Column at 47/116
+  |  |--Column at 48/116
+  |  |--Column at 49/116
+  |  |--Column at 50/116
+  |  |--Column at 51/116
+  |  |--Column at 52/116
+  |  |--Column at 53/116
+  |  |--Column at 54/116
+  |  |--Column at 55/116
+  |  |--Column at 56/116
+  |  |--Column at 57/116
+  |  |--Column at 58/116
+  |  |--Column at 59/116
+  |  |--Column at 60/116
+  |  |--Column at 61/116
+  |  |--Column at 66/142
+  |  |--Column at 67/142
+  |  |--Column at 68/142
+  |  |--Column at 69/142
+  |  |--Column at 66/143
+  |  |--Column at 67/143
+  |  |--Column at 68/143
+  |  |--Column at 69/143
+  |  |--Column at 66/144
+  |  |--Column at 67/144
+  |  |--Column at 68/144
+  |  \--Column at 69/144
+  |--[unnamed scene node] 
+  |  |--Checkpoint line 1
+  |  |--Billboard
+  |  |--Checkpoint line 4
+  |  |--Box
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Checkpoint line 21
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Box
+  |  |--Craft RECOV0-0
+  |  |--Craft RECOV0-0
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Box
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Box
+  |  |--Box
+  |  |--Box
+  |  |--Box
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Box
+  |  |--Box
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Box
+  |  |--Billboard
+  |  |--Box
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Box
+  |  |--Billboard
+  |  |--Box
+  |  |--Box
+  |  |--Box
+  |  |--Box
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Craft RECOV0-0
+  |  |--Craft RECOV0-0
+  |  |--Craft RECOV0-0
+  |  |--Craft RECOV0-0
+  |  |--Craft RECOV0-0
+  |  |--Checkpoint line 371
+  |  |--Checkpoint line 372
+  |  |--Checkpoint line 373
+  |  |--Checkpoint line 374
+  |  |--Checkpoint line 375
+  |  |--Checkpoint line 377
+  |  |--Checkpoint line 378
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  |--Billboard
+  |  \--Billboard
+  |--Waypoints
+  |  |--Waypoint line 41 to 334
+  |  |--Waypoint line 48 to 338
+  |  |--Waypoint line 49 to 303
+  |  |--Waypoint line 157 to 159
+  |  |--Waypoint line 159 to 304
+  |  |--Waypoint line 242 to 290
+  |  |--Waypoint line 249 to 306
+  |  |--Waypoint line 285 to 286
+  |  |--Waypoint line 286 to 338
+  |  |--Waypoint line 287 to 343
+  |  |--Waypoint line 290 to 299
+  |  |--Waypoint line 299 to 301
+  |  |--Waypoint line 301 to 302
+  |  |--Waypoint line 302 to 303
+  |  |--Waypoint line 303 to 304
+  |  |--Waypoint line 304 to 305
+  |  |--Waypoint line 305 to 249
+  |  |--Waypoint line 306 to 307
+  |  |--Waypoint line 307 to 308
+  |  |--Waypoint line 308 to 309
+  |  |--Waypoint line 309 to 310
+  |  |--Waypoint line 310 to 311
+  |  |--Waypoint line 311 to 312
+  |  |--Waypoint line 312 to 313
+  |  |--Waypoint line 313 to 376
+  |  |--Waypoint line 314 to 315
+  |  |--Waypoint line 315 to 316
+  |  |--Waypoint line 316 to 317
+  |  |--Waypoint line 317 to 318
+  |  |--Waypoint line 318 to 319
+  |  |--Waypoint line 319 to 320
+  |  |--Waypoint line 320 to 322
+  |  |--Waypoint line 322 to 323
+  |  |--Waypoint line 323 to 324
+  |  |--Waypoint line 324 to 325
+  |  |--Waypoint line 325 to 326
+  |  |--Waypoint line 326 to 327
+  |  |--Waypoint line 327 to 328
+  |  |--Waypoint line 328 to 329
+  |  |--Waypoint line 329 to 330
+  |  |--Waypoint line 330 to 331
+  |  |--Waypoint line 331 to 332
+  |  |--Waypoint line 332 to 41
+  |  |--Waypoint line 334 to 335
+  |  |--Waypoint line 335 to 337
+  |  |--Waypoint line 337 to 48
+  |  |--Waypoint line 338 to 242
+  |  |--Waypoint line 342 to 354
+  |  |--Waypoint line 343 to 344
+  |  |--Waypoint line 344 to 345
+  |  |--Waypoint line 345 to 346
+  |  |--Waypoint line 346 to 347
+  |  |--Waypoint line 347 to 348
+  |  |--Waypoint line 348 to 311
+  |  |--Waypoint line 349 to 311
+  |  |--Waypoint line 350 to 349
+  |  |--Waypoint line 351 to 350
+  |  |--Waypoint line 352 to 351
+  |  |--Waypoint line 353 to 352
+  |  |--Waypoint line 354 to 353
+  |  \--Waypoint line 376 to 314
+  |--Wall Segments
+  |  |--Wall segment line 2 to 26
+  |  |--Wall segment line 5 to 177
+  |  |--Wall segment line 7 to 297
+  |  |--Wall segment line 11 to 13
+  |  |--Wall segment line 12 to 47
+  |  |--Wall segment line 13 to 12
+  |  |--Wall segment line 14 to 11
+  |  |--Wall segment line 15 to 14
+  |  |--Wall segment line 16 to 15
+  |  |--Wall segment line 17 to 18
+  |  |--Wall segment line 18 to 52
+  |  |--Wall segment line 19 to 2
+  |  |--Wall segment line 20 to 129
+  |  |--Wall segment line 23 to 51
+  |  |--Wall segment line 24 to 25
+  |  |--Wall segment line 25 to 105
+  |  |--Wall segment line 26 to 27
+  |  |--Wall segment line 27 to 28
+  |  |--Wall segment line 28 to 29
+  |  |--Wall segment line 29 to 134
+  |  |--Wall segment line 30 to 138
+  |  |--Wall segment line 31 to 20
+  |  |--Wall segment line 32 to 36
+  |  |--Wall segment line 33 to 147
+  |  |--Wall segment line 36 to 31
+  |  |--Wall segment line 37 to 154
+  |  |--Wall segment line 38 to 146
+  |  |--Wall segment line 39 to 17
+  |  |--Wall segment line 42 to 43
+  |  |--Wall segment line 43 to 39
+  |  |--Wall segment line 47 to 276
+  |  |--Wall segment line 51 to 69
+  |  |--Wall segment line 52 to 243
+  |  |--Wall segment line 53 to 54
+  |  |--Wall segment line 54 to 55
+  |  |--Wall segment line 55 to 244
+  |  |--Wall segment line 56 to 115
+  |  |--Wall segment line 57 to 56
+  |  |--Wall segment line 60 to 61
+  |  |--Wall segment line 61 to 62
+  |  |--Wall segment line 62 to 66
+  |  |--Wall segment line 63 to 72
+  |  |--Wall segment line 64 to 65
+  |  |--Wall segment line 65 to 71
+  |  |--Wall segment line 66 to 67
+  |  |--Wall segment line 67 to 68
+  |  |--Wall segment line 68 to 70
+  |  |--Wall segment line 69 to 97
+  |  |--Wall segment line 70 to 151
+  |  |--Wall segment line 71 to 63
+  |  |--Wall segment line 72 to 73
+  |  |--Wall segment line 73 to 127
+  |  |--Wall segment line 74 to 38
+  |  |--Wall segment line 75 to 292
+  |  |--Wall segment line 76 to 77
+  |  |--Wall segment line 77 to 78
+  |  |--Wall segment line 78 to 79
+  |  |--Wall segment line 79 to 81
+  |  |--Wall segment line 80 to 76
+  |  |--Wall segment line 81 to 82
+  |  |--Wall segment line 82 to 200
+  |  |--Wall segment line 83 to 85
+  |  |--Wall segment line 84 to 110
+  |  |--Wall segment line 85 to 112
+  |  |--Wall segment line 86 to 83
+  |  |--Wall segment line 87 to 84
+  |  |--Wall segment line 88 to 89
+  |  |--Wall segment line 89 to 94
+  |  |--Wall segment line 90 to 91
+  |  |--Wall segment line 91 to 88
+  |  |--Wall segment line 92 to 90
+  |  |--Wall segment line 94 to 5
+  |  |--Wall segment line 95 to 172
+  |  |--Wall segment line 97 to 95
+  |  |--Wall segment line 99 to 100
+  |  |--Wall segment line 100 to 101
+  |  |--Wall segment line 101 to 262
+  |  |--Wall segment line 102 to 106
+  |  |--Wall segment line 103 to 104
+  |  |--Wall segment line 104 to 60
+  |  |--Wall segment line 105 to 114
+  |  |--Wall segment line 106 to 109
+  |  |--Wall segment line 108 to 87
+  |  |--Wall segment line 109 to 108
+  |  |--Wall segment line 110 to 111
+  |  |--Wall segment line 111 to 120
+  |  |--Wall segment line 112 to 113
+  |  |--Wall segment line 113 to 80
+  |  |--Wall segment line 114 to 146
+  |  |--Wall segment line 115 to 133
+  |  |--Wall segment line 119 to 253
+  |  |--Wall segment line 120 to 168
+  |  |--Wall segment line 121 to 119
+  |  |--Wall segment line 122 to 121
+  |  |--Wall segment line 124 to 209
+  |  |--Wall segment line 125 to 122
+  |  |--Wall segment line 127 to 24
+  |  |--Wall segment line 128 to 298
+  |  |--Wall segment line 129 to 130
+  |  |--Wall segment line 130 to 131
+  |  |--Wall segment line 131 to 148
+  |  |--Wall segment line 133 to 211
+  |  |--Wall segment line 134 to 135
+  |  |--Wall segment line 135 to 136
+  |  |--Wall segment line 136 to 137
+  |  |--Wall segment line 137 to 30
+  |  |--Wall segment line 138 to 139
+  |  |--Wall segment line 139 to 141
+  |  |--Wall segment line 141 to 32
+  |  |--Wall segment line 147 to 152
+  |  |--Wall segment line 148 to 269
+  |  |--Wall segment line 151 to 160
+  |  |--Wall segment line 152 to 37
+  |  |--Wall segment line 154 to 155
+  |  |--Wall segment line 155 to 156
+  |  |--Wall segment line 156 to 16
+  |  |--Wall segment line 160 to 162
+  |  |--Wall segment line 162 to 124
+  |  |--Wall segment line 163 to 102
+  |  |--Wall segment line 164 to 163
+  |  |--Wall segment line 166 to 164
+  |  |--Wall segment line 168 to 166
+  |  |--Wall segment line 173 to 174
+  |  |--Wall segment line 174 to 175
+  |  |--Wall segment line 175 to 176
+  |  |--Wall segment line 176 to 92
+  |  |--Wall segment line 177 to 180
+  |  |--Wall segment line 178 to 179
+  |  |--Wall segment line 179 to 181
+  |  |--Wall segment line 180 to 178
+  |  |--Wall segment line 181 to 182
+  |  |--Wall segment line 182 to 183
+  |  |--Wall segment line 183 to 184
+  |  |--Wall segment line 184 to 185
+  |  |--Wall segment line 185 to 186
+  |  |--Wall segment line 186 to 187
+  |  |--Wall segment line 187 to 188
+  |  |--Wall segment line 188 to 189
+  |  |--Wall segment line 189 to 190
+  |  |--Wall segment line 190 to 191
+  |  |--Wall segment line 191 to 192
+  |  |--Wall segment line 192 to 195
+  |  |--Wall segment line 195 to 196
+  |  |--Wall segment line 196 to 197
+  |  |--Wall segment line 197 to 198
+  |  |--Wall segment line 198 to 199
+  |  |--Wall segment line 199 to 86
+  |  |--Wall segment line 200 to 201
+  |  |--Wall segment line 201 to 202
+  |  |--Wall segment line 202 to 203
+  |  |--Wall segment line 203 to 204
+  |  |--Wall segment line 204 to 205
+  |  |--Wall segment line 205 to 206
+  |  |--Wall segment line 206 to 207
+  |  |--Wall segment line 207 to 208
+  |  |--Wall segment line 208 to 64
+  |  |--Wall segment line 209 to 210
+  |  |--Wall segment line 210 to 99
+  |  |--Wall segment line 211 to 212
+  |  |--Wall segment line 212 to 213
+  |  |--Wall segment line 213 to 214
+  |  |--Wall segment line 214 to 215
+  |  |--Wall segment line 215 to 216
+  |  |--Wall segment line 216 to 217
+  |  |--Wall segment line 217 to 218
+  |  |--Wall segment line 218 to 219
+  |  |--Wall segment line 219 to 220
+  |  |--Wall segment line 220 to 221
+  |  |--Wall segment line 221 to 222
+  |  |--Wall segment line 222 to 223
+  |  |--Wall segment line 223 to 224
+  |  |--Wall segment line 224 to 225
+  |  |--Wall segment line 225 to 229
+  |  |--Wall segment line 229 to 230
+  |  |--Wall segment line 230 to 231
+  |  |--Wall segment line 231 to 232
+  |  |--Wall segment line 232 to 233
+  |  |--Wall segment line 233 to 234
+  |  |--Wall segment line 234 to 235
+  |  |--Wall segment line 235 to 236
+  |  |--Wall segment line 236 to 237
+  |  |--Wall segment line 237 to 238
+  |  |--Wall segment line 238 to 239
+  |  |--Wall segment line 239 to 240
+  |  |--Wall segment line 240 to 241
+  |  |--Wall segment line 241 to 42
+  |  |--Wall segment line 243 to 273
+  |  |--Wall segment line 244 to 245
+  |  |--Wall segment line 245 to 246
+  |  |--Wall segment line 246 to 247
+  |  |--Wall segment line 247 to 248
+  |  |--Wall segment line 248 to 125
+  |  |--Wall segment line 251 to 257
+  |  |--Wall segment line 252 to 57
+  |  |--Wall segment line 253 to 252
+  |  |--Wall segment line 257 to 128
+  |  |--Wall segment line 260 to 270
+  |  |--Wall segment line 261 to 294
+  |  |--Wall segment line 262 to 264
+  |  |--Wall segment line 264 to 103
+  |  |--Wall segment line 265 to 7
+  |  |--Wall segment line 266 to 265
+  |  |--Wall segment line 269 to 260
+  |  |--Wall segment line 270 to 271
+  |  |--Wall segment line 271 to 33
+  |  |--Wall segment line 273 to 274
+  |  |--Wall segment line 274 to 278
+  |  |--Wall segment line 276 to 23
+  |  |--Wall segment line 278 to 53
+  |  |--Wall segment line 292 to 251
+  |  |--Wall segment line 293 to 361
+  |  |--Wall segment line 294 to 296
+  |  |--Wall segment line 295 to 75
+  |  |--Wall segment line 296 to 295
+  |  |--Wall segment line 297 to 261
+  |  |--Wall segment line 298 to 300
+  |  |--Wall segment line 300 to 19
+  |  |--Wall segment line 361 to 365
+  |  |--Wall segment line 362 to 172
+  |  |--Wall segment line 363 to 173
+  |  |--Wall segment line 364 to 363
+  |  |--Wall segment line 365 to 366
+  |  |--Wall segment line 366 to 367
+  |  |--Wall segment line 367 to 368
+  |  |--Wall segment line 368 to 369
+  |  |--Wall segment line 369 to 370
+  |  \--Wall segment line 370 to 364
+  |--Line
+  |--Line
+  \--Line
+

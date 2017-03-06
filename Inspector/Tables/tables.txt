@@ -1,0 +1,18 @@
+﻿
+0        24 bytes, 4000 entries, Entities Table
+98012    26 bytes, 1024 entries, Columns Table
+124636   16 bytes, 1024 entries, BlockTextures Table
+
+247264   85 bytes, ? entries, Unknown Table 1
+
+292108   something very short
+
+357668 - 358221  unknown 
+
+358222 - 362209, 16 bytes? , 256 entries?
+
+362210 - 366361 Unknown gradient/counter table
+
+402230 - 404619, 12 bytes? , 199 entries?
+
+404620   12 bytes, 256x160 entries, Map data
