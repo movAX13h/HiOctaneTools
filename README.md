@@ -4,6 +4,7 @@ The reverse-engineering work on all files of the game was done by srtuss (most o
 
 ### Inspector
 Loads and displays all entities of a level file and related assets.
+
 ![Desktop](Screenshots/inspector1.png)
 
 ![Desktop](Screenshots/inspector2.png)
@@ -12,6 +13,7 @@ Loads and displays all entities of a level file and related assets.
 
 ### Editor (unfinished)
 The editor can be used to modify existing levels and, when it's finished, to create new ones from scratch. Some modes are not implemented yet. If you have time, please help!
+
 ![Desktop](Screenshots/editor3.png)
 
 ![Desktop](Screenshots/editor4.png)
