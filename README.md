@@ -41,7 +41,10 @@ C#/.NET VisualStudio 2013 Solution - The inspector uses Windows forms and the ed
 ## Structures and Concepts
 
 ### Columns & Blocks ###
-Columns consist of blocks and they sit on cells where the floor texture ID is negative. Each column has 8 slots for blocks. Whether a slot contains a block or not is defined by the respective bit of the shape byte. The ID of the block (type or BlockDefinition as I called it in code) of the particular block is in A to H. 
+
+![image](https://cloud.githubusercontent.com/assets/1974959/24072465/6e687db6-0be7-11e7-9412-8bb68dfeea6f.png)
+
+Columns sit on map cells with negative floor texture ID. The negative ID is the column ID. Each column has 8 slots for blocks. Whether a slot contains a block or not is defined by the respective bit of the shape byte. The ID of the block (type or BlockDefinition as I called it in code) of the particular block is in A to H. 
 
 ![image](https://cloud.githubusercontent.com/assets/1974959/24065196/b2a925bc-0b69-11e7-8349-ac2f0836f25c.png)
 
@@ -59,7 +62,7 @@ If a column is standing on a cell that is affected by a morph (height change), i
 
 ### Entities ###
 
-... are objects/triggers/nodes/morphs in the world. I called all of these 'entities'. Entity positions are unique (a map cell can have only 1 entity - this seems to be a restriction in the original level editor). There are many different types of entities. Some are self explanatory but all of them can be seen in the inspector with additional helper lines to visualize connections between entities. 
+... are objects/triggers/nodes/morphs in the world. I called all of these 'entities'. Entity positions are unique (a map cell can have only 1 entity - this seems to be a restriction in the original level editor). There are many different types of entities. Some are self explanatory and all of them can be seen in the inspector with additional helper lines to visualize connections between entities. 
 
 Hint: The tables in the level inspector can be sorted by clicking the column header. This helps a lot when trying to understand how things are connected.
 
@@ -121,17 +124,22 @@ See [createEntity(EntityItem entity) in Level.cs](https://github.com/movAX13h/Hi
 ### Morphs & Triggers ###
 
 All morphs are bidirectional. This means that the heights of the source area cells transition to the heights of the target area cells and the target area transitions to the height of the source area.
-However, only target morph entities (MorphOnce and MorphPermanent) are linked to their sources using LINK (always references other entries in the entities table by ID). Columns on top of morphing cells adapt to the new height by default as if the whole world was made of one mesh.
+https://youtu.be/WJniHteG6G0
 
-The following image illustrates how the morphing wall in level 1 is set up. 
+However, only target morph entities (MorphOnce and MorphPermanent) are linked to their sources using LINK (always references other entries in the entities table by ID). Columns on top of morphing cells adapt to the new height by default as if the whole world was made of one mesh but there are different constellations aswell.
+
+
+The following illustrates how the morphing wall in level 1 is set up:
+
+![image](https://cloud.githubusercontent.com/assets/1974959/24067721/8ee3be5a-0b80-11e7-8387-81483a110fd5.png)
+
+https://youtu.be/CHFXNau8b4U
 
 1. Trigger 109 is run on game start since it is in group 1
 2. It is a timer trigger so it has the delay time in the VALUE column (100 in this case; that's about 4 seconds)
 3. After the delay, the trigger enables all entities in group 2 because it has group 2 in the TARGET GRP column (red arrows)
 4. Group 2 contains another trigger and a morph set consisting of a source and a target which is a MorphOnce in this case
 5. The trigger in group 2 is identical to the one in group 1. This means that, when it triggers after the delay, it triggers the group itself is in so that it repeats forever. (green and yellow arrows)
-
-![image](https://cloud.githubusercontent.com/assets/1974959/24067721/8ee3be5a-0b80-11e7-8387-81483a110fd5.png)
 
 A MorphPermanent has no delay between transitions and can be in group 1.
 Morphs can be triggered by any other type of trigger too.
