@@ -58,11 +58,11 @@ Blocks are described in the other table. Only the texture IDs for all 6 sides (N
 
 ![image](https://cloud.githubusercontent.com/assets/1974959/24065389/c9e92c44-0b6a-11e7-9806-4d67d9bcbe4d.png)
 
-The height of a block is 1 unit but the whole column (all blocks in it) is transformed based on the cell it is standing on:
+The height of a block is 1 unit but the whole column (all blocks in it) is deformed based on the cell it is standing on:
 
 ![image](https://cloud.githubusercontent.com/assets/1974959/24065504/d2dc885e-0b6b-11e7-9e0d-d5c9d0304eba.png)
 
-If a column is standing on a cell that is affected by a morph (height change), it adapts to the new height. In some cases there are columns in the source area - these are used to mirror-morph then. In my editor, I'm creating dummy columns at source positions if there are none to always have source and target values. In this video, on the right side you can see the columns change with the terrain morph: https://www.youtube.com/watch?v=lMp3-hK7Jms There are cases where the target columns get removed (after a morph triggered by a rocket in level 3 for example) but I will write about this in a separate section on morphs.
+If a column is standing on a cell that is affected by a morph (height change), it adapts to the new height. In some cases there are columns in the source area - these are used to mirror-morph then. In my editor, I'm creating dummy columns at source positions if there are none to always have source and target values. In this video, on the right side you can see the columns change with the terrain morph: https://www.youtube.com/watch?v=lMp3-hK7Jms There are cases where the target columns get removed (after a morph triggered by a rocket in level 3 for example); for more information, see the section below about morphs.
 
 ---
 
