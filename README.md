@@ -40,6 +40,12 @@ C#/.NET VisualStudio 2013 Solution - The inspector uses Windows forms and the ed
 
 ## Structures and Concepts
 
+... of the original game engine and its level files.
+
+### Map ###
+
+The map is a tilebased heightmap. Each entry is referred to as cell.
+
 ### Columns & Blocks ###
 
 ![image](https://cloud.githubusercontent.com/assets/1974959/24072465/6e687db6-0be7-11e7-9412-8bb68dfeea6f.png)
@@ -124,9 +130,8 @@ See [createEntity(EntityItem entity) in Level.cs](https://github.com/movAX13h/Hi
 ### Morphs & Triggers ###
 
 All morphs are bidirectional. This means that the heights of the source area cells transition to the heights of the target area cells and the target area transitions to the height of the source area.
-https://youtu.be/WJniHteG6G0
 
-However, only target morph entities (MorphOnce and MorphPermanent) are linked to their sources using LINK (always references other entries in the entities table by ID). Columns on top of morphing cells adapt to the new height by default as if the whole world was made of one mesh but there are different constellations aswell.
+However, only target morph entities (MorphOnce and MorphPermanent) are linked to their sources using LINK (always references other entries in the entities table by ID). Columns on top of morphing cells adapt to the new height by default as if the whole world was made of one mesh but there are different constellations aswell. https://youtu.be/WJniHteG6G0
 
 
 The following illustrates how the morphing wall in level 1 is set up:
@@ -145,6 +150,8 @@ A MorphPermanent has no delay between transitions and can be in group 1.
 Morphs can be triggered by any other type of trigger too.
 
 There is an inner logic with morphs and columns and how they are affected if source and target area differ. It is implemented in my level editor but please remind me to write that down if I forget :)
+
+Entities like collectable items are spawned when the group they belong to is activated by a trigger.
 
 ---
 
