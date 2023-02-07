@@ -16,6 +16,7 @@ using LevelEditor.Engine.Lights;
 using LevelEditor.Engine.Resources;
 using LevelEditor.Games.HiOctane.Materials;
 using LevelEditor.Games.HiOctane.Resources;
+using System.Text;
 
 namespace LevelEditor.Games.HiOctane.Models
 {
@@ -269,7 +270,6 @@ namespace LevelEditor.Games.HiOctane.Models
             }
         }
 
-
         private bool setupGeometry()
         {
             int x, z, i = 0;
@@ -286,7 +286,7 @@ namespace LevelEditor.Games.HiOctane.Models
             {
                 for (x = 0; x < levelRes.Width; x++)
                 {
-                    // 4 vertices - need separate UVs so cannot share
+                    // 4 vertices - we need separate UVs so cannot share
                     MapEntry a = GetMapEntry(x, z);
                     MapEntry b = GetMapEntry(x + 1, z);
                     MapEntry c = GetMapEntry(x + 1, z + 1);
@@ -596,5 +596,6 @@ namespace LevelEditor.Games.HiOctane.Models
             GL.BindVertexArray(0);
         }*/
         #endregion
+
     }
 }

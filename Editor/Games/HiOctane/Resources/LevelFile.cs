@@ -8,7 +8,7 @@ using OpenTK.Graphics.OpenGL;
 using System;
 
 using LevelEditor.Utils;
-
+using System.Text;
 
 namespace LevelEditor.Games.HiOctane.Resources
 {
@@ -85,7 +85,7 @@ namespace LevelEditor.Games.HiOctane.Resources
 
             return true;
         }
-
+        
         private bool loadEntitiesTable()
         {
             Entities = new OrderedDictionary<int, EntityItem>();
@@ -172,6 +172,65 @@ namespace LevelEditor.Games.HiOctane.Resources
 
             return true;
         }
+
+        #region JSON export
+        public bool SaveJSON(string filename)
+        {
+            // minimal JSON data required to reconstruct the level
+            StringBuilder s = new StringBuilder();
+            s.Append("{\"name\":\"" + Name.Replace("\"", "") + "\",");
+            s.Append("\"blocks\":").Append(BlockDefinitionsToJSON()).Append(",");
+            s.Append("\"columns\":").Append(ColumnDefinitionsToJSON()).Append(",");
+            s.Append("\"entities\":").Append(EntitiesToJSON()).Append(",");
+            s.Append("\"terrain\":").Append(MapToJSON());
+            s.Append("}");
+            File.WriteAllText(filename, s.ToString());
+            return true;
+        }
+
+        public string ColumnDefinitionsToJSON()
+        {
+            List<string> l = new List<string>();
+            foreach (var def in ColumnDefinitions.Values) l.Add(def.ToJSON());
+            return "[" + string.Join(",", l) + "]";
+        }
+
+        public string BlockDefinitionsToJSON()
+        {
+            List<string> l = new List<string>();
+            foreach (var def in BlockDefinitions.Values) l.Add(def.ToJSON());                
+            return "[" + string.Join(",", l) + "]";
+        }
+
+        public string EntitiesToJSON()
+        {
+            List<string> l = new List<string>();
+            foreach(var item in Entities.Values) l.Add(item.ToJSON());
+            return "[" + string.Join(",", l) + "]";
+        }
+
+        public string MapToJSON()
+        {
+            StringBuilder s = new StringBuilder();
+            
+            List<string> cells = new List<string>();
+            for (int z = 0; z < Height; z++)
+            {
+                for (int x = 0; x < Width; x++)
+                {
+                    MapEntry e = Map[x, z];// GetMapEntry(x, z);
+                    cells.Add(e.ToJSON());
+                }
+            }
+
+            s.Append("{\"width\":" + Width + ",\"height\":" + Height + ",");
+            s.Append("\"cells\":[");
+            s.Append(string.Join(",", cells));
+            s.Append("]}");
+
+            return s.ToString();
+        }
+        #endregion
 
     }
 }

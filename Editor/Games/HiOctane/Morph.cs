@@ -44,8 +44,8 @@ namespace LevelEditor.Games.HiOctane
             Target = target;
             Width = width;
             Height = height;
-            LastProgress = 0f;
             Permanent = permanent;
+            LastProgress = 0f;
             Columns = new List<Column>();
         }
 

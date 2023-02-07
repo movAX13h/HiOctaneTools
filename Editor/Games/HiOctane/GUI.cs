@@ -81,6 +81,7 @@ namespace LevelEditor.Games.HiOctane
             item.AddItem("New…", dummyHandler);
             item.AddItem("Load…", loadClicked);
             item.AddItem("Save…", saveClicked);
+            item.AddItem("Export JSON", exportJSON);
             //item.AddItem("Save As…", dummyHandler);
             item.AddSeparator();
             item.AddItem("Amazon Delta Turnpike", loadLevelClicked, 1);
@@ -168,6 +169,7 @@ namespace LevelEditor.Games.HiOctane
         }
 
         private const string LevelFilesFilter = "Level files (*.dat)|*.dat|All files (*.*)|*.*";
+        private const string JsonFilesFilter = "Json files (*.json)|*.json|All files (*.*)|*.*";
 
         private void loadClicked(MenuItem obj)
         {
@@ -195,6 +197,25 @@ namespace LevelEditor.Games.HiOctane
             if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 level.Data.Save(saveFileDialog1.FileName);
+            }
+
+            if (wasFullscreen) Window.ToggleFullscreen();
+        }
+
+        private void exportJSON(MenuItem obj)
+        {
+            System.Windows.Forms.SaveFileDialog saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            
+            saveFileDialog1.Filter = JsonFilesFilter;
+            saveFileDialog1.FilterIndex = 1;
+            saveFileDialog1.RestoreDirectory = true;
+
+            bool wasFullscreen = Window.IsFullscreen;
+            if (Window.IsFullscreen) Window.ToggleFullscreen();
+
+            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                level.Data.SaveJSON(saveFileDialog1.FileName);
             }
 
             if (wasFullscreen) Window.ToggleFullscreen();

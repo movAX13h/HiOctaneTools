@@ -81,7 +81,6 @@ namespace LevelEditor.Games.HiOctane.Resources
             return result;
         }
 
-
         public Bitmap PreviewImageBottom(AtlasMaterial atlas, Size size)
         {
             // bottom view
@@ -118,6 +117,11 @@ namespace LevelEditor.Games.HiOctane.Resources
         public override bool WriteChanges()
         {
             return false;
+        }
+
+        public string ToJSON()
+        {
+            return "{\"i\":" + ID + $",\"t\":[{N},{E},{S},{W},{T},{B}],\"m\":[{NMod},{EMod},{SMod},{WMod},{TMod},{BMod}]" + "}";
         }
     }
 }

@@ -13,6 +13,7 @@ using OpenTK.Input;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -492,13 +493,10 @@ namespace LevelEditor.Games.HiOctane
             return columns;
         }
 
-
         public override void Update(float dTime)
         {
             Time = Editor.Time;
-
             Camera.Update(dTime);
-
 
             // sky sphere
             skySphere.Position = new Vector3(Camera.Camera.Position.X, Camera.Camera.Position.Y - 200f, Camera.Camera.Position.Z);
@@ -533,7 +531,6 @@ namespace LevelEditor.Games.HiOctane
                 Terrain.Morph(morph);
             }
         }
-
 
         public void Unload()
         {

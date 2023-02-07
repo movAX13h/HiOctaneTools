@@ -117,5 +117,20 @@ namespace LevelEditor.Games.HiOctane.Resources
         {
             return false;
         }
+
+        public string ToJSON()
+        {
+            return "{\"i\":" + ID + "," + 
+                    "\"t\":\"" + GameType.ToString() + "\"," +
+                    "\"n\":" + NextID + "," +
+                    "\"x\":" + X + "," +
+                    "\"z\":" + Z + "," +
+                    "\"g\":" + Group + "," +
+                    "\"l\":" + TargetGroup + "," +
+                    "\"v\":" + Value + "," +
+                    "\"ox\":" + OffsetX + "," +
+                    "\"oy\":" + OffsetY +
+                   "}";
+        }
     }
 }

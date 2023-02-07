@@ -53,6 +53,15 @@ namespace LevelEditor.Games.HiOctane.Resources
 
             return true;
         }
+
+        public string ToJSON()
+        {
+            return "{\"h\":" + Height.ToString("0.000") + "," +
+                    "\"t\":" + TextureId + "," +
+                    "\"m\":" + TextureModification + "," + 
+                    "\"c\":" + (Column == null ? "-1" : Column.ID.ToString()) +
+                    "}";
+        }
     }
 
 }

@@ -35,5 +35,10 @@ namespace LevelEditor.Games.HiOctane.Resources
         {
             return false;
         }
+
+        public string ToJSON()
+        {
+            return "{\"i\":" + ID + ", \"s\":" + Shape + ",\"b\":[" + string.Join(",", Blocks) + "]}";
+        }
     }
 }

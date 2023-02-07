@@ -150,7 +150,7 @@ namespace LevelEditor.Games.HiOctane.Models
             {
                 if ((Definition.Shape & (1 << bitNum)) == 0) continue;
 
-                int blockDefId = BitConverter.ToInt16(Definition.Bytes, 6 + bitNum * 2);
+                int blockDefId = Definition.Blocks[bitNum]; // BitConverter.ToInt16(Definition.Bytes, 6 + bitNum * 2);
                 BlockDefinition blockDef = levelRes.BlockDefinitions.GetValue(blockDefId);
 
                 // bottom vertices
