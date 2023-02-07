@@ -32,8 +32,9 @@ C#/.NET VisualStudio 2013 Solution - The inspector uses Windows forms and the ed
 ---
 
 ### Download
-- Level Inspector binary from author server: http://thrill-project.com/archiv/coding/Hi-OctaneLevelInspector.zip (2.7MB)
-- Level Editor binary from author server: http://thrill-project.com/archiv/coding/Hi-OctaneLevelEditor.zip (5.2MB)
+- Level Inspector binary from author server: https://thrill-project.com/archiv/coding/Hi-OctaneLevelInspector.zip (2.7MB)
+- Level Editor binary from author server: https://thrill-project.com/archiv/coding/Hi-OctaneLevelEditor.zip (5.2MB)
+- Utility to convert Bullfrog Object Data to Wavefront OBJ: https://thrill-project.com/archiv/coding/Hi-OctaneObjectsConverter.zip
 
 
 ---
