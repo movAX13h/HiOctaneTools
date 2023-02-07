@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level Editor", "Editor\Level Editor.csproj", "{D059C8FF-79AA-4CC6-9C1B-4D0709461126}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level Inspector", "Inspector\Level Inspector.csproj", "{58CFA79F-8F06-4E60-AE80-BBD5CF8585BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectsConverter", "ObjectsConverter\ObjectsConverter.csproj", "{A0B850F1-D504-4BDB-B938-4D284A622DAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,8 +39,23 @@ Global
 		{58CFA79F-8F06-4E60-AE80-BBD5CF8585BC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{58CFA79F-8F06-4E60-AE80-BBD5CF8585BC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{58CFA79F-8F06-4E60-AE80-BBD5CF8585BC}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Debug|x86.Build.0 = Debug|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0B850F1-D504-4BDB-B938-4D284A622DAD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D35CB96-BD53-4ECA-B4BF-E7FFF90648BD}
 	EndGlobalSection
 EndGlobal
