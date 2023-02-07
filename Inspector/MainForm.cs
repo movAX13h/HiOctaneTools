@@ -128,7 +128,14 @@ namespace LevelInspector
 
         private void showMap(string filename)
         {
-            byte[] bytes = File.ReadAllBytes(mapsDir + filename);
+            string path = mapsDir + filename;
+            if (!File.Exists(path))
+            {
+                MessageBox.Show("Make sure the data files are available in the output folder! Maybe you need to unpack data.zip to the Debug or Release folder.", "Data not found!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            byte[] bytes = File.ReadAllBytes(path);
 
             Atlas atlas = null;
 
