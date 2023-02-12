@@ -46,6 +46,7 @@ namespace ObjectsConverter
                 return file;
             }
 
+            bool isAnimation = false;
             byte[] bytes = File.ReadAllBytes(filename);
 
             #region validate header
@@ -131,12 +132,13 @@ namespace ObjectsConverter
             #endregion
 
             #region 2 constants (05 and 01, same in all object files)
-            file.Error = "Constant 1 did not match!";
-            if (bytes[offset] != 5) return file;
+            file.Error = "Constant 1 is " + bytes[offset] + ", not 5 or 7!";
+            if (bytes[offset] != 5 && bytes[offset] != 7) return file;
+            if (bytes[offset] == 7) isAnimation = true;
             offset++;
 
-            file.Error = "Constant 2 did not match!";
-            if (bytes[offset] != 1) return file;
+            file.Error = "Constant 2 is " + bytes[offset] + ", not 1, 4 or 20!";
+            if (bytes[offset] != 1 && bytes[offset] != 4 && bytes[offset] != 20) return file;
             offset++;
             #endregion
 
@@ -172,6 +174,15 @@ namespace ObjectsConverter
             for(int i = 0; i < numTriangles; i++)
             {
                 byte type = bytes[offset];
+
+                // Animations have some zeros before actual triangle data.
+                // I couldn't find a regularity in the number of bytes used.
+                while (isAnimation && type == 0) 
+                {
+                    offset++;
+                    type = bytes[offset];
+                }
+
                 if (type != 5 && type != 4)
                 {
                     file.Error = "Triangle #" + (i+1) + "has unknown type " + type;
