@@ -25,6 +25,14 @@ namespace LevelEditor.Games.HiOctane
         protected bool fadeBuildings = false;
 
         protected Level level;
+        private readonly List<LevelEditor.Engine.GUI.Control> panels = new List<LevelEditor.Engine.GUI.Control>();
+
+        protected void AddPanel(GUI gui, LevelEditor.Engine.GUI.Control panel)
+        {
+            panel.Visible = false;
+            panels.Add(panel);
+            gui.AddChild(panel);
+        }
 
         public EditMode(string name)
         {
@@ -34,6 +42,7 @@ namespace LevelEditor.Games.HiOctane
 
         public void SetLevel(Level level)
         {
+            Disable();
             this.level = level;
         }
 
@@ -55,9 +64,14 @@ namespace LevelEditor.Games.HiOctane
 
         public void Disable()
         {
-            if (!Enabled) return;
+            if (Enabled) disable();
             Enabled = false;
-            disable();
+            MouseUsed = false;
+            foreach (var panel in panels)
+            {
+                panel.Visible = false;
+                panel.ResetInteraction();
+            }
         }
 
         protected virtual void enable() { }
@@ -84,6 +98,8 @@ namespace LevelEditor.Games.HiOctane
         }
 
         public virtual void Draw() { } // for custom rendering
+
+        public virtual void SuspendMouse() { MouseUsed = false; }
 
         public abstract void Resize(GUI gui);
 

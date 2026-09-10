@@ -49,6 +49,7 @@ namespace LevelEditor.Games.HiOctane
         private Level level;
 
         private bool allowMouse = false;
+        private bool waitForModeSwitchRelease;
 
         public GUI(Editor editor) : base(new Vector2(800, 600))
         {
@@ -302,7 +303,9 @@ namespace LevelEditor.Games.HiOctane
 
 
             if (allowMouse && Window.IsCursorVisible) ProcessMouse(); // this recursively iterates all controls with MouseEnabled/MouseChildren enabled
-            if (!MouseConsumed) currentMode.Update(time, dTime);
+            if (!Window.MouseLeftDown) waitForModeSwitchRelease = false;
+            if (!MouseConsumed && !waitForModeSwitchRelease) currentMode.Update(time, dTime);
+            else currentMode.SuspendMouse();
             MouseUsed = MouseConsumed || currentMode.MouseUsed;
 
 
@@ -318,9 +321,16 @@ namespace LevelEditor.Games.HiOctane
 
 
         #region mode
+        public void DeactivateModes()
+        {
+            foreach (EditMode mode in editModes) mode.Disable();
+            menu.Close();
+        }
+
         private void enableMode(EditMode mode)
         {
-            if (currentMode != null) currentMode.Disable();
+            DeactivateModes();
+            waitForModeSwitchRelease = Window.MouseLeftDown;
             currentMode = mode;
             currentMode.Enable();
             infoPanel.Headline.Text = mode.Name.ToUpper();

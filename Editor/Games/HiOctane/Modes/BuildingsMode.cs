@@ -74,7 +74,7 @@ namespace LevelEditor.Games.HiOctane.Modes
             editPanel.MouseEnabled = false;
             editPanel.Pos.Y = gui.Size.Y - editPanel.Size.Y - 100;
             editPanel.Visible = false;
-            gui.AddChild(editPanel);
+            AddPanel(gui, editPanel);
 
             emptyBlockTopBitmap = new Bitmap(Config.DATA_FOLDER + "gui/images/isoCubeTop.png");
             emptyBlockBottomBitmap = new Bitmap(Config.DATA_FOLDER + "gui/images/isoCubeBottom.png");

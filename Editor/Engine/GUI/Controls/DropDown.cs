@@ -36,6 +36,12 @@ namespace LevelEditor.Engine.GUI.Controls
             list.Pos.Y = -list.Size.Y + 4;
         }
 
+        public override void ResetInteraction()
+        {
+            list.Visible = false;
+            base.ResetInteraction();
+        }
+
         public override void Resize(float w, float h)
         {
             //base.Resize(w, h);

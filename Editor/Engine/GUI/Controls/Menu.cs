@@ -69,7 +69,7 @@ namespace LevelEditor.Engine.GUI.Controls
 
         public void Close()
         {
-            if (currentItem != null) currentItem.Close();
+            foreach (MenuItem item in items) item.Close();
             currentItem = null;
         }
 

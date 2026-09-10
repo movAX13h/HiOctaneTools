@@ -52,7 +52,7 @@ namespace LevelEditor.Games.HiOctane.Modes
             listsPanel.Pos.X = 0;
             listsPanel.Pos.Y = 22;
             listsPanel.Visible = false;
-            gui.AddChild(listsPanel);
+            AddPanel(gui, listsPanel);
 
             groupsList = new ListBox(new Vector2(120, listsPanel.Size.Y - 24), 1, groupItemSelected);
             groupsList.Pos.X = 2;

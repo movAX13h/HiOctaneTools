@@ -59,6 +59,13 @@ namespace LevelEditor.Games.HiOctane.Controls
 
             private Vector2 brushPos;
 
+            public override void ResetInteraction()
+            {
+                brushesList.ResetInteraction();
+                RemoveChild(brushesList);
+                base.ResetInteraction();
+            }
+
             private void selectBrush(int id)
             {
                 if (id < 0 && id > brushes.Count - 1) return;

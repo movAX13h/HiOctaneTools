@@ -112,6 +112,15 @@ namespace LevelEditor.Engine.GUI
         }
 
         #region mouse
+        public virtual void ResetInteraction()
+        {
+            MouseDown = false;
+            MouseOver = false;
+            MouseConsumed = false;
+            dragging = false;
+            foreach (Control child in Children) child.ResetInteraction();
+        }
+
         protected virtual void OnMouseDown()
         {}
 

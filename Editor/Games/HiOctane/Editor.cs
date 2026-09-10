@@ -62,6 +62,8 @@ namespace LevelEditor.Games.HiOctane
         public bool LoadLevel(int levelNumber)
         {
             ready = false;
+            // Detach reusable mode cursors before unloading the old scene's GPU resources.
+            gui.DeactivateModes();
             if (level != null) level.Unload();
 
             level = new Level(levelNumber);

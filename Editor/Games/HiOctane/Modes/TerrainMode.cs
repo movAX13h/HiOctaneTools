@@ -119,7 +119,7 @@ namespace LevelEditor.Games.HiOctane.Modes
             toolsPanel.BorderSize = 1;
             toolsPanel.Visible = false;
             toolsPanel.Pos.Y = (float)Math.Floor(0.5f * (gui.Size.Y - toolsPanel.Size.Y));
-            gui.AddChild(toolsPanel);
+            AddPanel(gui, toolsPanel);
 
             lowerButton = new ImageButton(new Vector2(42, 32), "gui/images/downGray.png", lowerButtonClicked);
             lowerButton.Pos.X = 4;

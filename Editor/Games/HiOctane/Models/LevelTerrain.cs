@@ -192,6 +192,14 @@ namespace LevelEditor.Games.HiOctane.Models
             dirtyPositions = true;
         }
 
+        public void ApplyTexture(MapEntry entry)
+        {
+            int index = 4 * (entry.X + entry.Z * levelRes.Width);
+            var uvs = material.MakeUVs(entry.TextureId, entry.TextureModification);
+            for (int i = 0; i < 4; i++) uvVboData[index + i] = uvs[i];
+            dirtyUVs = true;
+        }
+
         public void Morph(Morph morph)
         {
             if (morph.Progress == morph.LastProgress) return;

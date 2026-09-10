@@ -15,8 +15,21 @@ Loads and displays all entities of a level file and related assets.
 
 ---
 
-### Editor (unfinished)
-The editor can be used to modify existing levels and, when it's finished, to create new ones from scratch. Some modes are not implemented yet. If you have time, please help!
+### Editor 0.6 (unfinished)
+
+The editor supports inspecting existing levels, sculpting terrain, and painting terrain textures. Creating levels from scratch and several editing modes are still unfinished.
+
+New in **0.6**:
+
+- Windows display scaling support, including changes between monitors. Text, panels, spacing, and mouse hit areas scale together, with sharper text at fractional settings such as 125%.
+- Terrain texture painting with a paged tile palette, rotation and flip controls, tile sampling, last-stroke undo, and saved texture changes.
+- Mode switching closes the previous mode's panels, dropdowns, and brush popups, and prevents a held mouse button from immediately painting in the new mode.
+
+#### Texture editing
+
+Open Textures mode with **2** or **MODE > Textures**. Select a tile from the palette, use **Rotate** or **Flip** to change its orientation, then drag on the terrain to paint. **Pick tile** or the middle mouse button samples an existing tile; **Undo** restores the last paint stroke. Use **LEVEL > Save** to save the texture changes.
+
+Tiles containing building columns are protected because their floor textures belong to shared column definitions.
 
 ![Desktop](Screenshots/editor3.png)
 
@@ -27,7 +40,7 @@ The editor can be used to modify existing levels and, when it's finished, to cre
 ![Desktop](Screenshots/editor6.png)
 
 ### Source code
-C#/.NET VisualStudio 2013 Solution - The inspector uses Windows forms and the editor is made in a custom engine using OpenTK.
+C#/.NET solution targeting .NET Framework 4.8. The inspector uses Windows Forms, and the editor uses a custom engine built on OpenTK.
 
 ---
 

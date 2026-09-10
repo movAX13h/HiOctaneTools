@@ -46,10 +46,13 @@ namespace LevelEditor.Games.HiOctane.Resources
             Bytes[2] = heightBytes[0];
             Bytes[3] = heightBytes[1];
 
-            //Bytes[4] = (byte)(TextureId >> 8);
-            //Bytes[5] = (byte)TextureId;
-
-            //Bytes[10] = (byte)(TextureModification << 4);
+            // Negative values reference a shared building column, not a tile ID.
+            if (Column == null)
+            {
+                Bytes[4] = (byte)TextureId;
+                Bytes[5] = (byte)(TextureId >> 8);
+            }
+            Bytes[10] = (byte)((Bytes[10] & 0x0f) | ((TextureModification & 0x0f) << 4));
 
             return true;
         }
