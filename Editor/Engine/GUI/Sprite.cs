@@ -120,14 +120,17 @@ namespace LevelEditor.Engine.GUI
         public abstract void Update(float time, float dtime);
 
 
+        protected virtual Vector2 RenderPosition
+        {
+            get
+            {
+                return SnapToPixel ? new Vector2((float)Math.Round(Pos.X), (float)Math.Round(Pos.Y)) : Pos;
+            }
+        }
+
         public virtual void Render(Shader shader)
         {
-            if (SnapToPixel)
-            {
-                Vector2 pos = new Vector2((float)Math.Round(Pos.X), (float)Math.Round(Pos.Y));
-                shader.SetUniform("translation", pos);
-            }
-            else shader.SetUniform("translation", Pos);
+            shader.SetUniform("translation", RenderPosition);
 
             shader.SetUniform("alpha", Alpha);
 

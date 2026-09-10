@@ -150,7 +150,7 @@ namespace LevelEditor.Engine.Core
                 if (overlay != null)
                 {
                     GL.Disable(EnableCap.DepthTest);
-                    overlay.Draw(size);
+                    overlay.Draw(size / Window.UiScale);
                     GL.Enable(EnableCap.DepthTest);
                 }
 

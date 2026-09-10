@@ -18,24 +18,34 @@ namespace LevelEditor.Engine.GUI
         private Rectangle dirtyRegion;
         private bool disposed;
         public TextureUnit Unit { get; private set; }
+        public Size PixelSize { get { return bmp.Size; } }
 
         #region Constructors
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        /// <param name="width">The width of the backing store in pixels.</param>
-        /// <param name="height">The height of the backing store in pixels.</param>
-        public DynamicTexture(int width, int height, TextureUnit unit, TextRenderingHint renderingHint = TextRenderingHint.ClearTypeGridFit)
+        /// <param name="width">The width in 96-DPI logical units.</param>
+        /// <param name="height">The height in 96-DPI logical units.</param>
+        /// <param name="scale">Backing-store pixels per logical unit.</param>
+        public DynamicTexture(float width, float height, TextureUnit unit, TextRenderingHint renderingHint = TextRenderingHint.ClearTypeGridFit, float scale = 1f)
         {
             Unit = unit;
 
             if (width <= 0) throw new ArgumentOutOfRangeException("width");
             if (height <= 0) throw new ArgumentOutOfRangeException("height ");
+            if (scale <= 0 || float.IsNaN(scale) || float.IsInfinity(scale)) throw new ArgumentOutOfRangeException("scale");
             if (GraphicsContext.CurrentContext == null) throw new InvalidOperationException("No GraphicsContext is current on the calling thread.");
 
-            bmp = new Bitmap(width, height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            int pixelWidth = (int)Math.Ceiling(width * scale);
+            int pixelHeight = (int)Math.Ceiling(height * scale);
+            bmp = new Bitmap(pixelWidth, pixelHeight, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            // Never inherit the desktop DPI: font measurements and control sizes
+            // share a 96-DPI coordinate system, with a denser backing store only.
+            bmp.SetResolution(96, 96);
             gfx = Graphics.FromImage(bmp);
+            // Extra edge pixels are padding, not a reason to stretch the font.
+            gfx.ScaleTransform(scale, scale);
 
             gfx.TextRenderingHint = renderingHint;
             //gfx.TextRenderingHint = TextRenderingHint.AntiAlias;
@@ -46,7 +56,7 @@ namespace LevelEditor.Engine.GUI
             GL.BindTexture(TextureTarget.Texture2D, texture);
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMinFilter, (int)TextureMinFilter.Linear);
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMagFilter, (int)TextureMagFilter.Linear);
-            GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, width, height, 0, PixelFormat.Rgba, PixelType.UnsignedByte, IntPtr.Zero);
+            GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, pixelWidth, pixelHeight, 0, PixelFormat.Rgba, PixelType.UnsignedByte, IntPtr.Zero);
         }
 
         #endregion
@@ -81,9 +91,13 @@ namespace LevelEditor.Engine.GUI
         {
             gfx.DrawString(text, font, brush, point);
 
+            // Layout must not change with rasterization density or font hinting.
+            var state = gfx.Save();
+            gfx.ResetTransform();
             SizeF size = gfx.MeasureString(text, font);
-            dirtyRegion = Rectangle.Round(RectangleF.Union(dirtyRegion, new RectangleF(point, size)));
-            dirtyRegion = Rectangle.Intersect(dirtyRegion, new Rectangle(0, 0, bmp.Width, bmp.Height));
+            gfx.Restore(state);
+            // Upload full rows, including antialiasing outside the measured bounds.
+            dirtyRegion = new Rectangle(0, 0, bmp.Width, bmp.Height);
             return size;
         }
 

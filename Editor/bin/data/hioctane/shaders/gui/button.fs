@@ -12,7 +12,7 @@ varying vec2 vPos;
 
 void main(void)
 {
-	vec2 pos = gl_FragCoord.xy - vPos;// - size*0.5;
+	vec2 pos = vPos;
 
 	if (borderSize > 0.5 && (
 		pos.x < borderSize ||

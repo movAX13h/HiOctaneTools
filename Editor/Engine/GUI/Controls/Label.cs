@@ -15,6 +15,7 @@ namespace LevelEditor.Engine.GUI.Controls
         private DynamicTexture texture;
         private PrivateFontCollection privateFontCollection;
         private Font font;
+        private float textureScale;
 
         private float fontSize = 10.0f;
         private string fontName = "";
@@ -113,23 +114,47 @@ namespace LevelEditor.Engine.GUI.Controls
                 }
                 else
                 {
-                    font = SystemFonts.DefaultFont;
+                    font = new Font(SystemFonts.DefaultFont.FontFamily, fontSize);
                     Log.WriteLine(Log.LOG_WARNING, "TextSprite font '" + fontName + "' not found. Using default font.");
                 }
             }
 
-            texture = new DynamicTexture((int)Size.X, (int)Size.Y, TextureUnit.Texture0, renderingHint);
             updateText();
+        }
+
+        private void ensureTexture()
+        {
+            if (texture != null && textureScale == Window.UiScale) return;
+            if (texture != null) texture.Dispose();
+            textureScale = Window.UiScale;
+            // Grayscale coverage works on transparent textures; ClearType assumes
+            // a known opaque background and otherwise leaves colored fringes.
+            var hint = renderingHint == TextRenderingHint.ClearTypeGridFit
+                ? TextRenderingHint.AntiAliasGridFit : renderingHint;
+            texture = new DynamicTexture(Math.Max(1, Size.X),
+                Math.Max(1, Size.Y), TextureUnit.Texture0, hint, textureScale);
         }
 
         private void updateText()
         {
-            if (texture == null) return;
+            if (font == null) return;
+            ensureTexture();
 
             texture.Clear(backgroundColor);
             if (shadow)
-                texture.DrawString(text, font, new SolidBrush(Color.Black), new PointF(1,1));
-            TextSize = texture.DrawString(text, font, new SolidBrush(textColor), PointF.Empty);
+                using (var brush = new SolidBrush(Color.Black))
+                    texture.DrawString(text, font, brush, new PointF(1,1));
+            using (var brush = new SolidBrush(textColor))
+                TextSize = texture.DrawString(text, font, brush, PointF.Empty);
+        }
+
+        public override void Resize(float w, float h)
+        {
+            if (Size.X == w && Size.Y == h) return;
+            base.Resize(w, h);
+            if (texture != null) texture.Dispose();
+            texture = null;
+            updateText();
         }
 
         private bool isFontInstalled(string fontName)
@@ -146,13 +171,32 @@ namespace LevelEditor.Engine.GUI.Controls
         public override void Unload()
         {
             if (texture != null) texture.Dispose();
+            if (font != null) font.Dispose();
+            if (privateFontCollection != null) privateFontCollection.Dispose();
             base.Unload();
         }
 
         protected override void ApplyUniforms()
         {
+            if (textureScale != Window.UiScale) updateText();
             texture.Bind();
             material.SetUniform("texture", 0);
+            // Map each raster pixel to exactly one screen pixel. Fractional DPI
+            // otherwise squeezes the rounded-up bitmap and blurs it a second time.
+            material.SetUniform("geometryScale", new Vector2(
+                texture.PixelSize.Width / (Window.UiScale * Size.X),
+                texture.PixelSize.Height / (Window.UiScale * Size.Y)));
+        }
+
+        protected override Vector2 RenderPosition
+        {
+            get
+            {
+                if (!SnapToPixel) return Pos;
+                Vector2 offset = WorldPositionOffset();
+                Vector2 position = (Pos + offset) * Window.UiScale;
+                return new Vector2((float)Math.Round(position.X), (float)Math.Round(position.Y)) / Window.UiScale - offset;
+            }
         }
     }
 }

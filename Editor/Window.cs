@@ -65,6 +65,11 @@ namespace LevelEditor
         public static Vector2 MousePosLast { get; private set; }
         public static Vector2 MouseDelta { get; private set; }
 
+        // Controls use 96-DPI logical units; scene picking continues to use pixels.
+        private static float uiScale = 1f;
+        public static float UiScale { get { return uiScale; } private set { uiScale = value; } }
+        public static Vector2 UiMousePos { get { return MousePos / UiScale; } }
+
         public static void ToggleFullscreen()
         {
             instance.toggleFullscreen();
@@ -104,6 +109,7 @@ namespace LevelEditor
         {
             if (IsFullscreen) return;
 
+            delta *= UiScale;
             instance.X += (int)delta.X;
             instance.Y -= (int)delta.Y;
             MousePos -= delta;
@@ -111,9 +117,9 @@ namespace LevelEditor
 
         public static void ResizeDrag()
         {
-            Size s = new Size((int)MousePos.X + 8, instance.Height - (int)MousePos.Y + 8);
-            if (s.Width < 650) s.Width = 650;
-            if (s.Height < 400) s.Height = 400;
+            Size s = new Size((int)(MousePos.X + 8 * UiScale), instance.Height - (int)MousePos.Y + (int)(8 * UiScale));
+            if (s.Width < 650 * UiScale) s.Width = (int)(650 * UiScale);
+            if (s.Height < 400 * UiScale) s.Height = (int)(400 * UiScale);
             instance.Size = s;
         }
 
@@ -128,6 +134,7 @@ namespace LevelEditor
         #endregion
 
         private IGame editor;
+        private WindowDpi windowDpi;
 
         private int startLevel;
         public Point center;
@@ -143,6 +150,9 @@ namespace LevelEditor
             WindowBorder = WindowBorder.Hidden;
 
             instance = this;
+            UiScale = WindowDpi.GetScale(WindowInfo.Handle);
+            windowDpi = new WindowDpi(WindowInfo.Handle, OnDpiChanged);
+            ClientSize = new Size((int)Math.Round(1200 * UiScale), (int)Math.Round(660 * UiScale));
             startLevel = level;
 
             Title = Application.ProductName + " " + Application.ProductVersion.Replace(".0", "");
@@ -191,7 +201,21 @@ namespace LevelEditor
         protected override void OnResize(EventArgs e)
         {
             recalculateCenter();
-            if (editor.Ready) editor.OnResize(ClientRectangle, Width, Height);
+            if (editor != null && editor.Ready && ClientSize.Width > 0 && ClientSize.Height > 0)
+                editor.OnResize(ClientRectangle, ClientSize.Width, ClientSize.Height);
+        }
+
+        private void OnDpiChanged(float scale, Rectangle suggestedBounds)
+        {
+            UiScale = scale;
+            if (WindowState == WindowState.Normal) Bounds = suggestedBounds;
+            OnResize(EventArgs.Empty);
+        }
+
+        protected override void OnUnload(EventArgs e)
+        {
+            if (windowDpi != null) windowDpi.ReleaseHandle();
+            base.OnUnload(e);
         }
 
         protected override void OnUpdateFrame(FrameEventArgs e)
@@ -311,8 +335,8 @@ namespace LevelEditor
 
                 if (GUI.IsVisible)
                 {
-                    if (mp.Y > Height - 32) mp.Y -= Height - 52;
-                    if (mp.Y < 20) mp.Y += Height - 52;
+                    if (mp.Y > Height - 32 * UiScale) mp.Y -= Height - 52 * UiScale;
+                    if (mp.Y < 20 * UiScale) mp.Y += Height - 52 * UiScale;
                 }
                 else
                 {

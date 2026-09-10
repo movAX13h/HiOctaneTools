@@ -15,7 +15,7 @@ float udRoundBox( vec2 p, vec2 b, float r ) { return length(max(abs(p)-b+r,0.0))
 
 void main(void)
 {
-	vec2 pos = gl_FragCoord.xy - vPos;
+	vec2 pos = vPos;
 
 	vec4 color = vec4(backgroundColor, alpha);
 	

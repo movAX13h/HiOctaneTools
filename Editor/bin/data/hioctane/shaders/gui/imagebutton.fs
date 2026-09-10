@@ -12,7 +12,7 @@ varying vec2 vPos;
 
 void main(void)
 {
-	vec2 uv = (gl_FragCoord.xy - vPos) / size;
+	vec2 uv = vPos / size;
 	uv.y *= -1.0;
 	vec4 col = texture2D(icon, uv);
 	col.rgb *= tint;

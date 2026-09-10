@@ -108,7 +108,7 @@ namespace LevelEditor.Engine.GUI.Controls
 
         private void knobDrag(Vector2 delta)
         {
-            Vector2 mouse = Window.MousePos - track.WorldPositionOffset();
+            Vector2 mouse = Window.UiMousePos - track.WorldPositionOffset();
             setValueFromNewKnobPosition(mouse.X - track.Pos.X);
         }
 

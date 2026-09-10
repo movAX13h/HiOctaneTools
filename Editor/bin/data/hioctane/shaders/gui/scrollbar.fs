@@ -9,7 +9,7 @@ varying vec2 vPos;
 
 void main(void)
 {
-	vec2 pos = gl_FragCoord.xy - vPos;
+	vec2 pos = vPos;
 	gl_FragColor = vec4(backgroundColor, alpha);
 }
 

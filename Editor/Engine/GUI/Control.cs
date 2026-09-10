@@ -97,6 +97,7 @@ namespace LevelEditor.Engine.GUI
             material.Bind();
             material.SetUniform("resolution", resolution);
             material.SetUniform("size", Size);
+            material.SetUniform("geometryScale", Vector2.One);
             material.SetUniform("offset", WorldPositionOffset());
 
             ApplyUniforms();
@@ -153,13 +154,13 @@ namespace LevelEditor.Engine.GUI
 
         private void checkMouse()
         {
-            MousePosLocal = Window.MousePos - WorldPositionOffset();
+            MousePosLocal = Window.UiMousePos - WorldPositionOffset();
             MouseOver = HitTest(MousePosLocal);
 
             // mouse dragging
             if (MouseDown)
             {
-                Vector2 delta = Window.MousePos - mousePos;
+                Vector2 delta = (Window.MousePos - mousePos) / Window.UiScale;
                 if (delta.Length > 0.0f)
                 {
                     dragging = true;

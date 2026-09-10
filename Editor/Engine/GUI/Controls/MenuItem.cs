@@ -10,6 +10,7 @@ namespace LevelEditor.Engine.GUI.Controls
     public class MenuItem : Button
     {
         private Label label;
+        private bool centerText;
         public Action<MenuItem> Callback;
         public object Tag { get; private set; }
 
@@ -38,8 +39,8 @@ namespace LevelEditor.Engine.GUI.Controls
                 centerText = true;
                 Resize(label.TextSize.Width + 20, size.Y); // updates Size
             }
-            label.Pos.X = centerText ? 0.5f * (Size.X - label.TextSize.Width) : 20;
-            label.Pos.Y = -6;
+            this.centerText = centerText;
+            layoutLabel();
             AddChild(label);
 
             BorderSize = 4;
@@ -63,6 +64,7 @@ namespace LevelEditor.Engine.GUI.Controls
             subItems.Add(item, cb);
             item.Callback = itemClicked;
             AddChild(item);
+            layoutSubItems();
             return item;
         }
 
@@ -75,6 +77,30 @@ namespace LevelEditor.Engine.GUI.Controls
             separator.BackgroundColor = Color.FromArgb(140, 140, 140);
             AddChild(separator);
             separators.Add(separator);
+            layoutSubItems();
+        }
+
+        public override void Resize(float w, float h)
+        {
+            base.Resize(w, h);
+            if (label != null) layoutLabel();
+        }
+
+        private void layoutLabel()
+        {
+            // Text is drawn from the top of its texture; sprites use a bottom origin.
+            label.Resize((float)Math.Ceiling(label.TextSize.Width), (float)Math.Ceiling(label.TextSize.Height));
+            label.Pos.X = centerText ? 0.5f * (Size.X - label.Size.X) : 20;
+            label.Pos.Y = 0.5f * (Size.Y - label.Size.Y);
+        }
+
+        private void layoutSubItems()
+        {
+            float width = 200;
+            foreach (MenuItem item in subItems.Keys)
+                width = Math.Max(width, (float)Math.Ceiling(item.label.TextSize.Width) + 40);
+            foreach (MenuItem item in subItems.Keys) item.Resize(width, item.Size.Y);
+            foreach (Panel separator in separators) separator.Resize(width, separator.Size.Y);
         }
 
         private void itemClicked(MenuItem item)

@@ -110,7 +110,7 @@ namespace LevelEditor.Games.HiOctane
             this.height = height;
 
             engine.OnResize(clientRectangle, width, height);
-            gui.Resize(width, height);
+            gui.Resize(width / Window.UiScale, height / Window.UiScale);
         }
 
         #region Mouse
