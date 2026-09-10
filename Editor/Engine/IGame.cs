@@ -22,5 +22,6 @@ namespace LevelEditor.Engine
 
         abstract public void KeyDown(Key key);
         abstract public void KeyUp(Key key);
+        public virtual void FocusLost() { }
     }
 }

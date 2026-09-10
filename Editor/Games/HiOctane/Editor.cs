@@ -26,6 +26,7 @@ namespace LevelEditor.Games.HiOctane
 
         private int width;
         private int height;
+        private bool cameraDragging;
 
         public override bool Ready { get { return ready; } }
         private bool ready;
@@ -61,7 +62,9 @@ namespace LevelEditor.Games.HiOctane
 
         public bool LoadLevel(int levelNumber)
         {
+            CameraMode cameraMode = level == null ? CameraMode.Pan : level.Camera.Mode;
             ready = false;
+            ResetNavigation();
             // Detach reusable mode cursors before unloading the old scene's GPU resources.
             gui.DeactivateModes();
             if (level != null) level.Unload();
@@ -69,6 +72,8 @@ namespace LevelEditor.Games.HiOctane
             level = new Level(levelNumber);
             if (engine.SetScene(level))
             {
+                level.Camera.AspectRatio = width / (float)Math.Max(1, height);
+                level.Camera.SetMode(cameraMode);
                 if (level.Camera.Camera != null) engine.SetCamera(level.Camera.Camera);
 
                 Log.WriteLine(Log.LOG_INFO, "level " + levelNumber + " setup done" + Environment.NewLine +
@@ -94,6 +99,7 @@ namespace LevelEditor.Games.HiOctane
             Time += dTime;
             Profiler.Begin("UPDATE", true, 10);
             gui.Update(Time, dTime);
+            if (gui.HasModalDialog) level.Camera.ResetInput();
             level.Update(dTime);
             Profiler.End("UPDATE");
         }
@@ -110,6 +116,7 @@ namespace LevelEditor.Games.HiOctane
         {
             this.width = width;
             this.height = height;
+            if (level != null) level.Camera.AspectRatio = width / (float)Math.Max(1, height);
 
             engine.OnResize(clientRectangle, width, height);
             gui.Resize(width / Window.UiScale, height / Window.UiScale);
@@ -119,34 +126,32 @@ namespace LevelEditor.Games.HiOctane
 
         public override void MouseDown(MouseButton button)
         {
+            if (!ready) return;
             if (button == MouseButton.Left) gui.WindowMouseDown();
+            if (button == MouseButton.Right && !gui.HasModalDialog && !gui.PointerOverUI && !Window.MouseLeftDown)
+            {
+                cameraDragging = true;
+                Window.MouseWrap = true;
+                gui.SuspendEditingUntilRelease();
+            }
         }
 
         public override void MouseUp(MouseButton button)
         {
-            if (button == MouseButton.Right) Window.MouseWrap = false; //Window.ShowCursor();
+            if (button == MouseButton.Right) { cameraDragging = false; Window.MouseWrap = false; }
         }
 
         public override void MouseMove(Vector2 mousePos, Vector2 mouseDelta)
         {
             if (!ready) return;
 
-            if (!GUI.MouseUsed)
-            {
-                Vector2 delta = new Vector2(mouseDelta.X / (float)width, mouseDelta.Y / (float)height);
-
-                if (Window.MouseRightDown)
-                {
-                    Window.MouseWrap = true;
-                    level.Camera.MouseMove(delta);
-                }
-
-            }
+            if (cameraDragging && Window.MouseRightDown && !gui.HasModalDialog)
+                level.Camera.MouseMove(mouseDelta / Math.Max(1, height));
         }
 
         public override void MouseWheel(float delta)
         {
-
+            if (ready && !gui.HasModalDialog && !gui.PointerOverUI) level.Camera.Zoom(delta);
         }
         #endregion
 
@@ -154,6 +159,13 @@ namespace LevelEditor.Games.HiOctane
         public override void KeyDown(Key key)
         {
             if (!ready) return;
+            if (key == Key.F1) { gui.ToggleHelp(); return; }
+            if (key == Key.Escape) { gui.Escape(); return; }
+            if (gui.HasModalDialog) return;
+            if (key == Key.F2) { SetCameraMode(CameraMode.Fly); return; }
+            if (key == Key.F3) { SetCameraMode(CameraMode.Pan); return; }
+            if (key == Key.F4) { SetCameraMode(CameraMode.TopDown); return; }
+            if (key == Key.F) { FitMap(); return; }
             level.KeyDown(key);
             level.Camera.KeyDown(key);
             gui.KeyDown(key);
@@ -166,6 +178,41 @@ namespace LevelEditor.Games.HiOctane
             if (!ready) return;
             level.KeyUp(key);
             level.Camera.KeyUp(key);
+            if (gui.HasModalDialog) return;
+            if (key == Key.BackSpace) Window.ToggleFullscreen();
+            if (key == Key.Insert) Window.SetVSync(!Window.IsVSync);
+        }
+
+        public void SetCameraMode(CameraMode mode)
+        {
+            if (!ready || gui.HasModalDialog) return;
+            ResetNavigation();
+            Vector3 position = level.Camera.Camera.Position;
+            Vector3 direction = (level.Camera.Camera.LookAt - position).Normalized();
+            var hit = level.Collisions.RayCast(position, direction);
+            level.Camera.SetMode(mode, hit.Hit ? (Vector3?)hit.Position : null);
+            gui.SuspendEditingUntilRelease();
+        }
+
+        public void FitMap()
+        {
+            if (!ready || gui.HasModalDialog) return;
+            ResetNavigation();
+            level.Camera.FitMap();
+            gui.SuspendEditingUntilRelease();
+        }
+
+        public void ResetNavigation()
+        {
+            cameraDragging = false;
+            Window.MouseWrap = false;
+            if (level != null && level.Camera != null) level.Camera.ResetInput();
+        }
+
+        public override void FocusLost()
+        {
+            ResetNavigation();
+            if (gui != null) { gui.ResetInteraction(); gui.SuspendEditingUntilRelease(); }
         }
         #endregion
     }

@@ -35,6 +35,10 @@ namespace LevelEditor.Games.HiOctane
         private InfoPanel infoPanel;
         private Panel statusPanel;
         private Label fpsLabel;
+        private CameraToolbar cameraToolbar;
+        private HelpDialog helpDialog;
+        public bool HasModalDialog { get { return helpDialog != null && helpDialog.Visible; } }
+        public bool PointerOverUI { get { return Visible && ContainsPointer(Window.UiMousePos); } }
 
         private ImageButton winMinimizeButton;
         private ImageButton winFullscreenButton;
@@ -76,7 +80,7 @@ namespace LevelEditor.Games.HiOctane
             item.AddItem("[TAB] GUI ON/OFF", toggleGUI);
             item.AddItem("[HOM] PROFILER ON/OFF", toggleProfiler);
             item.AddSeparator();
-            item.AddItem("[ESC] Exit", exitApplication);
+            item.AddItem("Exit", exitApplication);
 
             item = menu.AddItem("LEVEL");
             item.AddItem("New…", dummyHandler);
@@ -105,7 +109,7 @@ namespace LevelEditor.Games.HiOctane
             }
 
             item = menu.AddItem("ABOUT");
-            item.AddItem("Help", dummyHandler);
+            item.AddItem("[F1] Help", delegate { ToggleHelp(); });
             item.AddItem("Author", authorLink);
             #endregion
 
@@ -165,6 +169,11 @@ namespace LevelEditor.Games.HiOctane
 
             Editor.Profiler.Pos.Y = 50;
             AddChild(Editor.Profiler);
+
+            cameraToolbar = new CameraToolbar(editor.SetCameraMode, editor.FitMap, ToggleHelp);
+            AddChild(cameraToolbar);
+            helpDialog = new HelpDialog(CloseHelp);
+            AddChild(helpDialog);
 
             layout();
         }
@@ -252,6 +261,8 @@ namespace LevelEditor.Games.HiOctane
             fpsLabel.Pos.X = (float)Math.Floor(0.5f * (Size.X - fpsLabel.Size.X));
 
             Editor.Profiler.Pos.X = Size.X - Editor.Profiler.Size.X - 10;
+            cameraToolbar.Pos = new Vector2(Size.X - cameraToolbar.Size.X - 6, Size.Y - cameraToolbar.Size.Y - 40);
+            helpDialog.Resize(Size.X, Size.Y);
         }
 
         public override void Resize(float w, float h)
@@ -285,6 +296,7 @@ namespace LevelEditor.Games.HiOctane
         public void SetLevel(Level level)
         {
             this.level = level;
+            cameraToolbar.SetCamera(level.Camera);
             infoPanel.LevelName.Text = level.Name;
             Window.SetTitleAppendix(level.Name);
             foreach (EditMode mode in editModes) mode.SetLevel(level);
@@ -293,6 +305,14 @@ namespace LevelEditor.Games.HiOctane
 
         public override void Update(float time, float dTime)
         {
+            if (HasModalDialog)
+            {
+                helpDialog.ProcessMouse();
+                helpDialog.Update(time, dTime);
+                currentMode.SuspendMouse();
+                MouseUsed = true;
+                return;
+            }
             string space = "         ";
             fpsLabel.Text = "VSYNC " + (Window.IsVSync ? "ON" : "OFF").PadRight(3, ' ') + space +
                             "FPS " + Window.RenderFPS.ToString().PadRight(4, ' ') + space +
@@ -304,9 +324,9 @@ namespace LevelEditor.Games.HiOctane
 
             if (allowMouse && Window.IsCursorVisible) ProcessMouse(); // this recursively iterates all controls with MouseEnabled/MouseChildren enabled
             if (!Window.MouseLeftDown) waitForModeSwitchRelease = false;
-            if (!MouseConsumed && !waitForModeSwitchRelease) currentMode.Update(time, dTime);
+            if (!MouseConsumed && !waitForModeSwitchRelease && !HasModalDialog && !Window.MouseRightDown) currentMode.Update(time, dTime);
             else currentMode.SuspendMouse();
-            MouseUsed = MouseConsumed || currentMode.MouseUsed;
+            MouseUsed = HasModalDialog || MouseConsumed || currentMode.MouseUsed || Window.MouseRightDown;
 
 
             base.Update(time, dTime);
@@ -314,6 +334,7 @@ namespace LevelEditor.Games.HiOctane
 
         public void WindowMouseDown()
         {
+            if (HasModalDialog) { helpDialog.ProcessMouse(); return; }
             ProcessMouse();
             allowMouse = MouseConsumed;
             if (!MouseConsumed) menu.Close();
@@ -321,6 +342,38 @@ namespace LevelEditor.Games.HiOctane
 
 
         #region mode
+        public void SuspendEditingUntilRelease()
+        {
+            waitForModeSwitchRelease = Window.MouseLeftDown;
+            if (currentMode != null) currentMode.SuspendMouse();
+        }
+
+        public void ToggleHelp()
+        {
+            if (HasModalDialog) { CloseHelp(); return; }
+            editor.ResetNavigation();
+            menu.Close();
+            ResetInteraction();
+            SuspendEditingUntilRelease();
+            Visible = true;
+            helpDialog.Open();
+            MouseUsed = true;
+        }
+
+        public void CloseHelp()
+        {
+            helpDialog.Visible = false;
+            helpDialog.ResetInteraction();
+            editor.ResetNavigation();
+            SuspendEditingUntilRelease();
+        }
+
+        public void Escape()
+        {
+            if (HasModalDialog) CloseHelp();
+            else { menu.Close(); ResetInteraction(); editor.ResetNavigation(); SuspendEditingUntilRelease(); }
+        }
+
         public void DeactivateModes()
         {
             foreach (EditMode mode in editModes) mode.Disable();

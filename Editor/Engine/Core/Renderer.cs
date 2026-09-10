@@ -142,8 +142,7 @@ namespace LevelEditor.Engine.Core
                 pass = RenderPass.Normal;
                 DefaultFrameBuffer.Bind();
 
-                if (camera == null) view = Matrix4.LookAt(new Vector3(0, 0, 10), new Vector3(0, 0, 0), Vector3.UnitY);
-                else view = Matrix4.LookAt(camera.Position, camera.LookAt, camera.Up);
+                UpdateCameraMatrices();
 
                 renderNode(scene);
 
@@ -181,6 +180,16 @@ namespace LevelEditor.Engine.Core
             camera = cam;
         }
 
+        private void UpdateCameraMatrices()
+        {
+            float aspect = Math.Max(1, width) / (float)Math.Max(1, height);
+            if (camera == null) view = Matrix4.LookAt(new Vector3(0, 0, 10), Vector3.Zero, Vector3.UnitY);
+            else view = Matrix4.LookAt(camera.Position, camera.LookAt, camera.Up);
+            if (camera != null && camera.OrthographicHeight > 0)
+                projection = Matrix4.CreateOrthographic(camera.OrthographicHeight * aspect, camera.OrthographicHeight, 1, 10000);
+            else setPerspective((float)Math.PI / 3, aspect, 1, 10000);
+        }
+
         public void setViewport(int x, int y, int w, int h)
         {
             width = w;
@@ -209,6 +218,8 @@ namespace LevelEditor.Engine.Core
 
         public Vector3 Unproject(Vector3 pos)
         {
+            // Input can arrive before the first render after a camera-mode change.
+            UpdateCameraMatrices();
             Vector4 vec;
 
             vec.X = 2.0f * pos.X / (float)width - 1;

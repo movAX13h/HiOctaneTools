@@ -171,6 +171,7 @@ namespace LevelEditor.Games.HiOctane
 
             // player (camera controller really)
             Camera = new CameraController(new Vector3(6f, Terrain.Size.Y + 6f, 6f), new Vector3(10f, Terrain.Size.Y + 5f, 10f));
+            Camera.SetMapSize(Terrain.Size);
 
             // create building node and add columns
             Buildings = new SceneNode();

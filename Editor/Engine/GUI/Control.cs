@@ -112,6 +112,16 @@ namespace LevelEditor.Engine.GUI
         }
 
         #region mouse
+        // Read-only hit testing for camera gestures; do not dispatch button callbacks.
+        public bool ContainsPointer(Vector2 position)
+        {
+            if (!Visible) return false;
+            if (MouseChildren)
+                foreach (Control child in Children)
+                    if (child.ContainsPointer(position)) return true;
+            return MouseEnabled && HitTest(position - WorldPositionOffset());
+        }
+
         public virtual void ResetInteraction()
         {
             MouseDown = false;

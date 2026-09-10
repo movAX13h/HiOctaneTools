@@ -98,6 +98,8 @@
     <Compile Include="Engine\GUI\Sprite.cs" />
     <Compile Include="Engine\GUI\DynamicTexture.cs" />
     <Compile Include="Games\HiOctane\Controls\BrushSelector.cs" />
+    <Compile Include="Games\HiOctane\Controls\CameraToolbar.cs" />
+    <Compile Include="Games\HiOctane\Controls\HelpDialog.cs" />
     <Compile Include="Games\HiOctane\Controls\InfoPanel.cs" />
     <Compile Include="Games\HiOctane\EditMode.cs" />
     <Compile Include="Games\HiOctane\GUI.cs" />

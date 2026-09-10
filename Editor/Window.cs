@@ -370,21 +370,12 @@ namespace LevelEditor
 
         private void OnKeyDown(object sender, KeyboardKeyEventArgs key)
         {
-            switch (key.Key)
-            {
-                case Key.Escape: Exit(); break;
-                default: editor.KeyDown(key.Key); break;
-            }
+            editor.KeyDown(key.Key);
         }
 
         private void OnKeyUp(object sender, KeyboardKeyEventArgs key)
         {
-            switch (key.Key)
-            {
-                case Key.BackSpace: toggleFullscreen(); break;
-                case Key.Insert: SetVSync(!IsVSync); break;
-                default: editor.KeyUp(key.Key); break;
-            }
+            editor.KeyUp(key.Key);
 
         }
         #endregion

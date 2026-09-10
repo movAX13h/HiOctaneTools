@@ -6,7 +6,9 @@ namespace LevelEditor.Engine.Core
     public class CameraNode : RenderNode
     {
         public Vector3 LookAt;
-        public Vector3 Up { get; private set; }
+        public Vector3 Up { get; set; }
+        // Zero selects perspective; a positive value is the visible world height.
+        public float OrthographicHeight { get; set; }
 
         public CameraNode(Vector3 position, Vector3 lookAt)
         {
